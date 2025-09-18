@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Filament\Resources\DosenResource\Pages;
+
+use App\Filament\Resources\DosenResource;
+use App\Models\User; // <-- Tambahkan ini
+use Filament\Actions;
+use Filament\Resources\Pages\CreateRecord;
+
+class CreateDosen extends CreateRecord
+{
+    protected static string $resource = DosenResource::class;
+
+    protected function mutateFormDataBeforeCreate(array $data): array
+    {
+        // 1. Buat data user dari input form
+        $userData = [
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password']),
+            'role' => 'dosen',
+        ];
+
+        // 2. Simpan user baru ke database
+        $user = User::create($userData);
+
+        // 3. Berikan role 'dosen' via Spatie
+        $user->assignRole('dosen');
+
+        // 4. Masukkan ID user baru ke dalam data yang akan disimpan ke tabel dosens
+        $data['user_id'] = $user->id;
+
+        return $data;
+    }
+}
