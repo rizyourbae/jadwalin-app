@@ -97,6 +97,7 @@ class DosenResource extends Resource
                     ->label('NIP'),
                 TextColumn::make('fakultas.nama_fakultas')
                     ->sortable()
+                    ->searchable()
                     ->label('Fakultas'),
             ])
             ->filters([
