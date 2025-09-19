@@ -93,10 +93,10 @@ class UserResource extends Resource
         ];
     }
 
-    public static function canViewAny(): bool
+    /*public static function canViewAny(): bool
     {
         return Auth::user()->hasRole('super_admin');
-    }
+    }*/
 
     public static function getPages(): array
     {

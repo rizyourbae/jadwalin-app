@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Dosen;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,13 +15,19 @@ class EnsureUserIsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // Cek apakah user sudah login DAN memiliki role 'admin' ATAU 'super_admin'
-        if (Auth::check() && Auth::user()->hasAnyRole(['admin', 'super_admin', 'dosen'])) {
-            // Jika ya, izinkan akses
+        // 1. Cek dulu apakah user adalah tamu (belum login)
+        if (Auth::guest()) {
+            // Jika ya, arahkan ke halaman login admin
+            return redirect()->route('filament.admin.auth.login');
+        }
+
+        // 2. Jika sudah login, barulah cek rolenya
+        if (Auth::user()->hasAnyRole(['admin', 'super_admin', 'dosen'])) {
+            // Jika rolenya sesuai, izinkan akses
             return $next($request);
         }
 
-        // Jika tidak, tolak akses dengan halaman 403 (Forbidden)
+        // 3. Jika sudah login tapi rolenya salah, barulah tolak akses
         abort(403, 'AKSES DITOLAK. ANDA BUKAN ADMINISTRATOR.');
     }
 }

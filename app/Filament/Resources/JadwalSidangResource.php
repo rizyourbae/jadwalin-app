@@ -6,19 +6,19 @@ use App\Filament\Resources\JadwalSidangResource\Pages;
 use App\Filament\Resources\JadwalSidangResource\RelationManagers;
 use App\Models\JadwalSidang;
 use App\Models\PendaftaranSidang;
+use App\Models\Ruangan;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TimePicker;
+use Filament\Forms\Get;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Forms\Get;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class JadwalSidangResource extends Resource
 {
@@ -43,8 +43,25 @@ class JadwalSidangResource extends Resource
                             ->live()
                             ->required(),
                         Select::make('ruangan_id')
-                            ->relationship('ruangan', 'nama_ruangan')
                             ->label('Pilih Ruangan')
+                            ->options(function (Get $get) {
+                                // 1. Ambil id pendaftaran yang dipilih
+                                $pendaftaranId = $get('pendaftaran_sidang_id');
+                                if (!$pendaftaranId) {
+                                    return []; // Kembalikan array kosong jika belum ada pendaftaran dipilih
+                                }
+
+                                // 2. Cari data pendaftarannya untuk dapat fakultas_id
+                                $pendaftaran = PendaftaranSidang::find($pendaftaranId);
+                                if (!$pendaftaran) {
+                                    return [];
+                                }
+
+                                // 3. Ambil hanya ruangan dari fakultas yang sesuai
+                                return Ruangan::where('fakultas_id', $pendaftaran->fakultas_id)
+                                    ->pluck('nama_ruangan', 'id');
+                            })
+                            ->searchable()
                             ->required(),
                         DatePicker::make('tanggal_sidang')
                             ->label('Tanggal Sidang')

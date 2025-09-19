@@ -16,13 +16,19 @@ class EnsureUserHasMahasiswaRole
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // Cek apakah user sudah login DAN memiliki role 'mahasiswa'
-        if (Auth::check() && Auth::user()->hasRole('mahasiswa')) {
-            // Jika ya, izinkan dia melanjutkan ke halaman yang dituju
+        // 1. Cek dulu apakah user adalah tamu (belum login)
+        if (Auth::guest()) {
+            // Jika ya, arahkan ke halaman login mahasiswa
+            return redirect()->route('filament.mahasiswa.auth.login');
+        }
+
+        // 2. Jika sudah login, barulah cek rolenya
+        if (Auth::user()->role === 'mahasiswa') {
+            // Jika rolenya sesuai, izinkan akses
             return $next($request);
         }
 
-        // Jika tidak, tolak akses dengan halaman 403 (Forbidden / Akses Ditolak)
+        // 3. Jika sudah login tapi rolenya salah, barulah tolak akses
         abort(403, 'AKSES DITOLAK. ANDA BUKAN MAHASISWA.');
     }
 }
