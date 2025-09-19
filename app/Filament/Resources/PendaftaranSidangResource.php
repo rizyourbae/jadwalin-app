@@ -79,6 +79,9 @@ class PendaftaranSidangResource extends Resource
                             ->columnSpanFull(),
                         FileUpload::make('berkas_utama')
                             ->label('File Utama (Proposal/Skripsi)')
+                            ->disk('public')
+                            ->directory('documents/skripsi')
+                            ->placeholder('Unggah Dokumen Disini')
                             ->required(),
                         FileUpload::make('berkas_pendukung')
                             ->label('File Pendukung (Jika Ada)'),

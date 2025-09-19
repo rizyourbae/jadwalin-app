@@ -18,7 +18,6 @@ use Filament\Tables\Table;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class UserResource extends Resource
 {
@@ -62,11 +61,13 @@ class UserResource extends Resource
             ->columns([
                 TextColumn::make('name')
                     ->label('Nama')
+                    ->sortable()
                     ->searchable(),
                 TextColumn::make('email')
                     ->searchable(),
                 TextColumn::make('roles.name')
                     ->label('Role')
+                    ->sortable()
                     ->badge(), // Tampilkan role sebagai badge
             ])
             ->filters([
