@@ -17,6 +17,7 @@ class CreateMahasiswa extends CreateRecord
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'role' => 'mahasiswa', // Atur role custom kita
+            'fakultas_id' => $data['fakultas_id'],
         ]);
 
         $user->assignRole('mahasiswa'); // Beri role via Spatie

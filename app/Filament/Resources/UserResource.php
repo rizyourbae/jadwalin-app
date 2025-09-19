@@ -40,7 +40,10 @@ class UserResource extends Resource
                     ->unique(ignoreRecord: true),
                 Select::make('fakultas_id')
                     ->relationship('fakultas', 'nama_fakultas')
-                    ->label('Fakultas'),
+                    ->label('Fakultas')
+                    ->searchable()
+                    ->preload()
+                    ->required(),
                 TextInput::make('password')
                     ->label('Password')
                     ->password()

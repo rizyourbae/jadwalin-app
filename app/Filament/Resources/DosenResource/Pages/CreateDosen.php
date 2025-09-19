@@ -19,6 +19,7 @@ class CreateDosen extends CreateRecord
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'role' => 'dosen',
+            'fakultas_id' => $data['fakultas_id'],
         ];
 
         // 2. Simpan user baru ke database
