@@ -25,6 +25,10 @@ class MahasiswaPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
+            ->brandName('Jadwalin')
+            ->brandLogo(asset('assets/img/jadwalin.png'))
+            ->brandLogoHeight('4.3rem')
+            ->favicon(asset('assets/img/apple.png'))
             ->id('mahasiswa')
             ->path('mahasiswa')
             ->login(Login::class)

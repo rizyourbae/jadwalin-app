@@ -5,65 +5,76 @@ namespace App\Filament\Mahasiswa\Pages;
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Auth;
 use App\Filament\Mahasiswa\Resources\PendaftaranSidangResource;
-use Filament\Actions\Action; // <-- Tambahkan ini
+use Filament\Actions\Action;
+use App\Filament\Mahasiswa\Widgets\RiwayatSidangWidget;
+use Filament\Infolists\Infolist;
+use Filament\Infolists\Concerns\InteractsWithInfolists;
+use Filament\Infolists\Contracts\HasInfolists;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Infolists\Components\Section as InfolistSection;
+use Filament\Infolists\Components\Grid as InfolistGrid;
 
-class MahasiswaDashboard extends Page
+class MahasiswaDashboard extends Page implements HasInfolists
 {
-    protected static ?string $navigationIcon = 'heroicon-o-home';
+    use InteractsWithInfolists;
+    protected static ?string $navigationIcon = 'heroicon-o-user';
     protected static string $view = 'filament.mahasiswa.pages.mahasiswa-dashboard';
-    protected static ?string $title = 'Dashboard';
+    protected static ?string $title = 'Riwayat Diri';
 
-    public $user;
-    public $mahasiswa;
-    public $pendaftaran;
-    public ?string $tahapSelanjutnya = null;
-    public bool $bisaMendaftar = false;
-
-    public function mount(): void
+    protected function getHeaderWidgets(): array
     {
-        $this->user = Auth::user();
-        $this->mahasiswa = $this->user->mahasiswa;
-        $this->pendaftaran = collect();
-
-        if ($this->mahasiswa) {
-            $this->pendaftaran = $this->mahasiswa
-                ->pendaftaranSidang()
-                ->latest()
-                ->get();
-            $this->pendaftaran = $this->mahasiswa->pendaftaranSidang()
-                ->with('jadwalSidang') // <-- UBAH DI SINI
-                ->latest()
-                ->get();
-
-            $this->tentukanTahapSelanjutnya();
-        }
+        return [
+            RiwayatSidangWidget::class,
+        ];
     }
 
-    protected function tentukanTahapSelanjutnya(): void
+    // Method untuk mendefinisikan Infolist profil
+    public function mahasiswaInfolist(Infolist $infolist): Infolist
     {
-        $pendaftaranTerakhir = $this->pendaftaran->first();
-
-        if (!$pendaftaranTerakhir) {
-            $this->tahapSelanjutnya = 'Seminar Proposal';
-            $this->bisaMendaftar = true;
-        } elseif ($pendaftaranTerakhir->jenis_sidang === 'seminar_proposal' && $pendaftaranTerakhir->status === 'selesai') {
-            $this->tahapSelanjutnya = 'Seminar Hasil';
-            $this->bisaMendaftar = true;
-        } elseif ($pendaftaranTerakhir->jenis_sidang === 'seminar_hasil' && $pendaftaranTerakhir->status === 'selesai') {
-            $this->tahapSelanjutnya = 'Sidang Munaqasah';
-            $this->bisaMendaftar = true;
-        }
+        return $infolist
+            ->record(Auth::user()->mahasiswa)
+            ->schema([
+                InfolistSection::make('Profil Mahasiswa')
+                    ->icon('heroicon-o-user-circle')
+                    ->schema([
+                        InfolistGrid::make(2)
+                            ->schema([
+                                TextEntry::make('user.name')->label('Nama Lengkap'),
+                                TextEntry::make('nim')->label('NIM'),
+                                TextEntry::make('fakultas.nama_fakultas')->label('Fakultas'),
+                                TextEntry::make('user.email')->label('Email'),
+                                TextEntry::make('pembimbing1.user.name')->label('Dosen Pembimbing 1'),
+                                TextEntry::make('pembimbing2.user.name')->label('Dosen Pembimbing 2'),
+                            ])
+                    ])
+            ]);
     }
 
     // Ini adalah method untuk membuat tombol di header halaman
     protected function getHeaderActions(): array
     {
+        $mahasiswa = Auth::user()->mahasiswa;
+        $pendaftaranTerakhir = $mahasiswa?->pendaftaranSidang()->latest()->first();
+
+        $tahapSelanjutnya = null;
+        $bisaMendaftar = false;
+
+        if (!$pendaftaranTerakhir) {
+            $tahapSelanjutnya = 'Seminar Proposal';
+            $bisaMendaftar = true;
+        } elseif ($pendaftaranTerakhir->jenis_sidang === 'seminar_proposal' && $pendaftaranTerakhir->status === 'selesai') {
+            $tahapSelanjutnya = 'Seminar Hasil';
+            $bisaMendaftar = true;
+        } elseif ($pendaftaranTerakhir->jenis_sidang === 'seminar_hasil' && $pendaftaranTerakhir->status === 'selesai') {
+            $tahapSelanjutnya = 'Sidang Munaqasah';
+            $bisaMendaftar = true;
+        }
+
         return [
             Action::make('daftarSidang')
-                ->label('Daftar ' . $this->tahapSelanjutnya)
-                // Ganti URL ke route resource Filament yang baru
+                ->label('Daftar ' . $tahapSelanjutnya)
                 ->url(PendaftaranSidangResource::getUrl('create'))
-                ->visible($this->bisaMendaftar),
+                ->visible($bisaMendaftar),
         ];
     }
 }

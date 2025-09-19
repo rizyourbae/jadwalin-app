@@ -24,7 +24,7 @@ class RuanganResource extends Resource
 {
     protected static ?string $model = Ruangan::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
+    protected static ?string $navigationIcon = 'bi-buildings-fill';
     protected static ?string $navigationLabel = 'Data Ruangan';
     protected static ?string $pluralModelLabel = 'Data Ruangan';
     protected static ?string $navigationGroup = 'Manajemen Akademik';
@@ -91,7 +91,9 @@ class RuanganResource extends Resource
     {
         $query = parent::getEloquentQuery();
 
-        if (Auth::user()->hasRole('super_admin')) {
+        /** @var \App\Models\User */
+        $user = Auth::user();
+        if ($user->hasRole('super_admin')) {
             return $query;
         }
 

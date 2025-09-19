@@ -52,8 +52,7 @@ class FakultasResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id')
-                    ->label('No.')
-                    ->sortable(),
+                    ->label('No.'),
                 TextColumn::make('nama_fakultas')
                     ->label('Nama Fakultas')
                     ->searchable(),
@@ -85,7 +84,9 @@ class FakultasResource extends Resource
     {
         $query = parent::getEloquentQuery();
 
-        if (Auth::user()->hasRole('super_admin')) {
+        /** @var \App\Models\User */
+        $user = Auth::user();
+        if ($user->hasRole('super_admin')) {
             return $query;
         }
 

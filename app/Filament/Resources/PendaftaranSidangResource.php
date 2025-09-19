@@ -7,10 +7,7 @@ use App\Filament\Resources\PendaftaranSidangResource\RelationManagers;
 use App\Models\PendaftaranSidang;
 use App\Models\Mahasiswa;
 use App\Models\JadwalSidang;
-use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\{FileUpload, Section, Select, Textarea};
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -18,17 +15,16 @@ use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Actions\Action;
-use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\{EditAction};
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class PendaftaranSidangResource extends Resource
 {
     protected static ?string $model = PendaftaranSidang::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-arrow-up';
+    protected static ?string $navigationIcon = 'bi-person-video3';
     protected static ?string $navigationLabel = 'Pendaftaran Sidang';
     protected static ?string $pluralModelLabel = 'Pendaftaran Sidang';
     protected static ?string $navigationGroup = 'Proses Sidang';
@@ -45,7 +41,9 @@ class PendaftaranSidangResource extends Resource
                                 name: 'mahasiswa',
                                 titleAttribute: 'nim',
                                 modifyQueryUsing: function (Builder $query) {
-                                    if (Auth::user()->hasRole('super_admin')) {
+                                    /** @var \App\Models\User */
+                                    $user = Auth::user();
+                                    if ($user->hasRole('super_admin')) {
                                         return; // Super admin bisa lihat semua
                                     }
                                     // Admin fakultas hanya bisa lihat mahasiswa dari fakultasnya
@@ -159,7 +157,9 @@ class PendaftaranSidangResource extends Resource
     {
         $query = parent::getEloquentQuery();
 
-        if (Auth::user()->hasRole('super_admin')) {
+        /** @var \App\Models\User */
+        $user = Auth::user();
+        if ($user->hasRole('super_admin')) {
             return $query;
         }
 

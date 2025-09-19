@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use Filament\Http\Middleware\Authenticate;
 use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -27,6 +26,10 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->brandLogo(asset('assets/img/jadwalin.png'))
+            ->brandLogoHeight('4.3rem')
+            ->brandName('Jadwalin')
+            ->favicon(asset('assets/img/apple.png'))
             ->id('admin')
             ->path('admin')
             ->login(Login::class)

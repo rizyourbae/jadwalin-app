@@ -124,7 +124,9 @@ class DosenResource extends Resource
     {
         $query = parent::getEloquentQuery();
 
-        if (Auth::user()->hasRole('super_admin')) {
+        /** @var \App\Models\User */
+        $user = Auth::user();
+        if ($user->hasRole('super_admin')) {
             return $query;
         }
 

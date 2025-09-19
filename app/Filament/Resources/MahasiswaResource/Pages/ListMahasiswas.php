@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\MahasiswaResource\Pages;
 
 use App\Filament\Resources\MahasiswaResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListMahasiswas extends ListRecords
@@ -13,7 +13,9 @@ class ListMahasiswas extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            CreateAction::make()
+                ->label('Tambah')
+                ->icon('bi-person-add'),
         ];
     }
 }

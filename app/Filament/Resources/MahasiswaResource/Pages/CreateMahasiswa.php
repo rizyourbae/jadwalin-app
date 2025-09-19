@@ -5,6 +5,7 @@ namespace App\Filament\Resources\MahasiswaResource\Pages;
 use App\Filament\Resources\MahasiswaResource;
 use App\Models\User;
 use Filament\Resources\Pages\CreateRecord;
+use Filament\Notifications\Notification;
 
 class CreateMahasiswa extends CreateRecord
 {
@@ -26,4 +27,18 @@ class CreateMahasiswa extends CreateRecord
 
         return $data;
     }
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+
+    protected function getCreatedNotification(): ?Notification
+    {
+        return Notification::make()
+            ->success()
+            ->title('Sukses')
+            ->body('Berhasil Menambahkan Mahasiswa Baru');
+    }
+    protected static ?string $title = 'Buat Akun Untuk Mahasiswa';
 }

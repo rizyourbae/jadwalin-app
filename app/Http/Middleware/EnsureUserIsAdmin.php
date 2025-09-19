@@ -22,7 +22,9 @@ class EnsureUserIsAdmin
         }
 
         // 2. Jika sudah login, barulah cek rolenya
-        if (Auth::user()->hasAnyRole(['admin', 'super_admin', 'dosen'])) {
+        /** @var \App\Models\User */
+        $user = Auth::user();
+        if ($user->hasAnyRole(['admin', 'super_admin', 'dosen'])) {
             // Jika rolenya sesuai, izinkan akses
             return $next($request);
         }

@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\DosenResource\Pages;
 
 use App\Filament\Resources\DosenResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListDosens extends ListRecords
@@ -13,7 +13,9 @@ class ListDosens extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            CreateAction::make()
+                ->label('Tambah')
+                ->icon('bi-person-add'),
         ];
     }
 }

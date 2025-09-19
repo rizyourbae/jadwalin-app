@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\FakultasResource\Pages;
 
 use App\Filament\Resources\FakultasResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListFakultas extends ListRecords
@@ -13,7 +13,10 @@ class ListFakultas extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            CreateAction::make()
+                ->label('Tambah')
+                ->icon('bi-building-add'),
         ];
     }
+
 }

@@ -4,12 +4,26 @@ namespace App\Filament\Resources\DosenResource\Pages;
 
 use App\Filament\Resources\DosenResource;
 use App\Models\User; // <-- Tambahkan ini
-use Filament\Actions;
+use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateDosen extends CreateRecord
 {
     protected static string $resource = DosenResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+
+    protected function getCreatedNotification(): ?Notification
+    {
+        return Notification::make()
+            ->success()
+            ->title('Sukses')
+            ->body('Berhasil Menambahkan Dosen Baru');
+    }
+    protected static ?string $title = 'Buat Akun Untuk Dosen';
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {

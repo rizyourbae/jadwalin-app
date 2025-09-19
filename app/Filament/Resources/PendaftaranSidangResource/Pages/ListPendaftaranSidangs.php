@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\PendaftaranSidangResource\Pages;
 
 use App\Filament\Resources\PendaftaranSidangResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListPendaftaranSidangs extends ListRecords
@@ -13,7 +13,9 @@ class ListPendaftaranSidangs extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            CreateAction::make()
+                ->label('Tambah Sidang')
+                ->icon('heroicon-o-document-plus'),
         ];
     }
 }

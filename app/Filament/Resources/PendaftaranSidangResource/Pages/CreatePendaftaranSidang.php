@@ -5,6 +5,7 @@ namespace App\Filament\Resources\PendaftaranSidangResource\Pages;
 use App\Filament\Resources\PendaftaranSidangResource;
 use App\Models\Mahasiswa;
 use Filament\Resources\Pages\CreateRecord;
+use Filament\Notifications\Notification;
 
 class CreatePendaftaranSidang extends CreateRecord
 {
@@ -20,4 +21,17 @@ class CreatePendaftaranSidang extends CreateRecord
 
         return $data;
     }
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+
+    protected function getCreatedNotification(): ?Notification
+    {
+        return Notification::make()
+            ->success()
+            ->title('Sukses')
+            ->body('Berhasil Mendaftarkan Sidang Terbaru');
+    }
+    protected static ?string $title = 'Tambah Sidang Baru';
 }

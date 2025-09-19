@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\JadwalSidangResource\Pages;
 
 use App\Filament\Resources\JadwalSidangResource;
-use Filament\Actions;
+use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateJadwalSidang extends CreateRecord
@@ -21,4 +21,13 @@ class CreateJadwalSidang extends CreateRecord
             'pendaftaran_sidang_id' => $this->pendaftaran_id,
         ]);
     }
+
+    protected function getCreatedNotification(): ?Notification
+    {
+        return Notification::make()
+            ->success()
+            ->title('Sukses')
+            ->body('Berhasil Menambahkan Jadwal Sidang');
+    }
+    protected static ?string $title = 'Buat Jadwal Sidang';
 }
