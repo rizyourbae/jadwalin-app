@@ -42,7 +42,7 @@ JADWALIN dibangun untuk memecahkan masalah penjadwalan sidang skripsi yang serin
 
 1.  Clone repository ini:
     ```bash
-    git clone [https://github.com/username/nama-repo.git](https://github.com/username/nama-repo.git)
+    git clone [https://github.com/rizyourbae/jadwalin-app.git](https://github.com/rizyourbae/jadwalin-app.git)
     cd nama-repo
     ```
 
