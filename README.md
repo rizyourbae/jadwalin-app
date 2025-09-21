@@ -10,7 +10,7 @@ Aplikasi web modern untuk mengelola dan mengotomatisasi seluruh proses penjadwal
 ---
 
 ### Tampilan Aplikasi
-*Tambahkan screenshot terbaik dari panel admin atau panel mahasiswa di sini untuk menarik perhatian.*
+
 
 
 ## 📖 Tentang Proyek
