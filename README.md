@@ -1,61 +1,91 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# JADWALIN - Aplikasi Penjadwalan Sidang Skripsi 🎓
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi web modern untuk mengelola dan mengotomatisasi seluruh proses penjadwalan sidang skripsi di lingkungan universitas, mulai dari seminar proposal hingga sidang munaqasah. Dibangun dengan penuh semangat menggunakan Laravel & Filament 3.
 
-## About Laravel
+![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php)
+![Laravel Version](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel)
+![Filament Version](https://img.shields.io/badge/Filament-3.x-F59E0B?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Tampilan Aplikasi
+*Tambahkan screenshot terbaik dari panel admin atau panel mahasiswa di sini untuk menarik perhatian.*
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## 📖 Tentang Proyek
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+JADWALIN dibangun untuk memecahkan masalah penjadwalan sidang skripsi yang seringkali rumit dan manual. Aplikasi ini menyediakan platform terpusat bagi Mahasiswa, Dosen, dan Admin Fakultas untuk berkolaborasi secara efisien, mengurangi kesalahan administrasi, dan memberikan transparansi penuh terhadap seluruh proses akademik.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Fitur Utama
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **Multi-Panel Architecture**: Panel Admin (`/admin`) dan Panel Mahasiswa (`/mahasiswa`) yang terpisah, masing-masing dengan sistem login dan keamanan yang ketat.
+-   **Manajemen Role & Izin**: Sistem hak akses yang kuat menggunakan Filament Shield (`Super Admin`, `Admin Fakultas`, `Dosen`, `Mahasiswa`).
+-   **Data Scoping Otomatis**: Admin Fakultas hanya bisa melihat dan mengelola data yang relevan dengan fakultasnya sendiri.
+-   **Alur Kerja Sidang Penuh**: Mengelola siklus hidup pendaftaran mahasiswa dari Seminar Proposal, Seminar Hasil, hingga Sidang Munaqasah.
+-   **Manajemen Data Master**: Halaman CRUD yang fungsional untuk Fakultas, Dosen, Mahasiswa, Ruangan, dan User.
+-   **Penjadwalan Cerdas**: Form penjadwalan dengan filter dinamis (*cascading dropdown*) untuk Dosen Penguji dan Ruangan berdasarkan fakultas mahasiswa.
+-   **Portal Mahasiswa Fungsional**: Dashboard personal bagi mahasiswa untuk mengajukan pendaftaran baru dan memantau status secara *real-time*.
+-   **Halaman Login Kustom**: Tampilan login yang unik dan profesional untuk setiap panel.
+-   **Kustomisasi Halaman Error**: Halaman error (seperti 403 & 404) yang sudah di-branding.
 
-## Laravel Sponsors
+## 🛠️ Teknologi yang Digunakan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   **PHP 8.2+**
+-   **Laravel 11.x**
+-   **Filament 3.x**
+-   **Filament Shield**
+-   **MySQL**
+-   **Tailwind CSS**
 
-### Premium Partners
+## 🚀 Instalasi & Setup
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1.  Clone repository ini:
+    ```bash
+    git clone [https://github.com/username/nama-repo.git](https://github.com/username/nama-repo.git)
+    cd nama-repo
+    ```
 
-## Contributing
+2.  Install dependensi Composer:
+    ```bash
+    composer install
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3.  Salin file `.env.example` menjadi `.env` dan generate application key:
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
 
-## Code of Conduct
+4.  Konfigurasi koneksi database di file `.env`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5.  Jalankan migrasi dan seeder untuk membuat tabel dan data awal:
+    ```bash
+    php artisan migrate --seed
+    ```
 
-## Security Vulnerabilities
+6.  Buat storage link untuk file upload:
+    ```bash
+    php artisan storage:link
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+7.  Jalankan server development:
+    ```bash
+    php artisan serve
+    ```
 
-## License
+## 🔑 Akun Demo
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Kamu bisa login menggunakan akun berikut yang sudah dibuat oleh Seeder:
+
+-   **Super Admin**
+    -   **Email:** `superadmin@uinsi.ac.id`
+    -   **Password:** `password`
+    -   **URL:** `/admin/login`
+
+-   **Admin Fakultas, Dosen & Mahasiswa**
+    -   Dapat dibuat melalui panel Super Admin atau Admin Fakultas untuk keperluan uji coba.
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT.
