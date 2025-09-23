@@ -10,13 +10,11 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Resources\Resource;
-use Filament\Tables\Actions\BulkActionGroup;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\{BulkActionGroup, DeleteBulkAction, EditAction, DeleteAction};
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
 
 class UserResource extends Resource
@@ -72,14 +70,21 @@ class UserResource extends Resource
                     ->searchable(),
                 TextColumn::make('roles.name')
                     ->label('Role')
-                    ->sortable()
-                    ->badge(), // Tampilkan role sebagai badge
+                    ->badge()
+                    ->formatStateUsing(fn(string $state): string => Str::title(str_replace('_', ' ', $state)))
+                    ->colors([
+                        'primary' => 'mahasiswa',
+                        'warning' => 'dosen',
+                        'success' => 'admin',
+                        'danger' => 'super_admin',
+                    ]),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 EditAction::make(),
+                DeleteAction::make(),
             ])
             ->bulkActions([
                 BulkActionGroup::make([
@@ -94,11 +99,6 @@ class UserResource extends Resource
             //
         ];
     }
-
-    /*public static function canViewAny(): bool
-    {
-        return Auth::user()->hasRole('super_admin');
-    }*/
 
     public static function getPages(): array
     {

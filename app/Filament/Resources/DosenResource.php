@@ -6,16 +6,14 @@ use App\Filament\Resources\DosenResource\Pages;
 use App\Filament\Resources\DosenResource\RelationManagers;
 use App\Models\Dosen;
 use App\Models\User;
-use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\{Grid, Section, TextInput, Select};
-use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Actions\{ActionGroup, ViewAction, EditAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class DosenResource extends Resource
 {
@@ -89,9 +87,33 @@ class DosenResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('user.name')
-                    ->searchable()
-                    ->sortable()
-                    ->label('Nama Dosen'),
+                    ->label('Nama Dosen')
+                    // Mengambil seluruh data record untuk digabungkan
+                    ->formatStateUsing(function ($record) {
+                        // Asumsi $record adalah model Dosen
+                        $nama = $record->user->name;
+                        $gelarDepan = $record->gelar_depan;
+                        $gelarBelakang = $record->gelar_belakang;
+                        // Menggabungkan gelar depan & nama dengan spasi, lalu nama & gelar belakang dengan koma
+                        return trim($gelarDepan . ' ' . $nama) . (!empty($gelarBelakang) ? ', ' . $gelarBelakang : '');
+                    })
+                    ->searchable(
+                        query: function (Builder $query, string $search): Builder {
+                            return $query
+                                ->whereHas('user', function ($subQuery) use ($search) {
+                                    $subQuery->where('name', 'like', "%{$search}%");
+                                })
+                                ->orWhere('gelar_depan', 'like', "%{$search}%")
+                                ->orWhere('gelar_belakang', 'like', "%{$search}%");
+                        }
+                    )
+                    ->sortable(
+                        query: function (Builder $query, string $direction): Builder {
+                            return $query
+                                ->join('users', 'dosens.user_id', '=', 'users.id')
+                                ->orderBy('users.name', $direction);
+                        }
+                    ), // Diurutkan berdasarkan nama
                 TextColumn::make('nip')
                     ->searchable()
                     ->label('NIP'),
@@ -104,11 +126,24 @@ class DosenResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                ActionGroup::make([
+                    ViewAction::make()
+                        ->label('Detail'),
+                    EditAction::make()
+                        ->label('Ubah'),
+                    DeleteAction::make()
+                        ->label('Hapus'),
+                ])
+                    ->label('Opsi') // Mengubah label default jika tidak pakai ikon
+                    ->icon('bi-gear-fill') // Mengganti ikon
+                    ->tooltip('Klik untuk melihat opsi lainnya') // Menambahkan tooltip
+                    ->color('info') // Mengubah warna tombol
+                    ->button()
+                    ->size('sm'), // Mengubah ukuran tombol
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -138,6 +173,7 @@ class DosenResource extends Resource
         return [
             'index' => Pages\ListDosens::route('/'),
             'create' => Pages\CreateDosen::route('/create'),
+            'view' => Pages\ViewDosen::route('/{record}'),
             'edit' => Pages\EditDosen::route('/{record}/edit'),
         ];
     }

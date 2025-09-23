@@ -6,19 +6,13 @@ use App\Filament\Resources\RuanganResource\Pages;
 use App\Filament\Resources\RuanganResource\RelationManagers;
 use App\Models\Ruangan;
 use Filament\Forms\Form;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\{Section, Select, TextInput};
 use Filament\Resources\Resource;
-use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Tables\Actions\BulkActionGroup;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\{ActionGroup, BulkActionGroup, DeleteBulkAction, EditAction, ViewAction, DeleteAction};
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class RuanganResource extends Resource
 {
@@ -71,7 +65,20 @@ class RuanganResource extends Resource
                 //
             ])
             ->actions([
-                EditAction::make(),
+                ActionGroup::make([
+                    ViewAction::make()
+                        ->label('Detail'),
+                    EditAction::make()
+                        ->label('Ubah'),
+                    DeleteAction::make()
+                        ->label('Hapus'),
+                ])
+                    ->label('Opsi') // Mengubah label default jika tidak pakai ikon
+                    ->icon('bi-gear-fill') // Mengganti ikon
+                    ->tooltip('Klik untuk melihat opsi lainnya') // Menambahkan tooltip
+                    ->color('info') // Mengubah warna tombol
+                    ->button()
+                    ->size('sm'), // Mengubah ukuran tombol
             ])
             ->bulkActions([
                 BulkActionGroup::make([
@@ -105,6 +112,7 @@ class RuanganResource extends Resource
         return [
             'index' => Pages\ListRuangans::route('/'),
             'create' => Pages\CreateRuangan::route('/create'),
+            'view' => Pages\ViewRuangan::route('/{record}'),
             'edit' => Pages\EditRuangan::route('/{record}/edit'),
         ];
     }

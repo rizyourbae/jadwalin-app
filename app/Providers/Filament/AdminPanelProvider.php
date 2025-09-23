@@ -18,6 +18,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Filament\Pages\Login;
+use Filament\Support\Enums\MaxWidth;
 use App\Http\Middleware\EnsureUserIsAdmin;
 
 class AdminPanelProvider extends PanelProvider
@@ -26,9 +27,11 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->sidebarCollapsibleOnDesktop(true)
             ->brandLogo(asset('assets/img/jadwalin.png'))
             ->brandLogoHeight('4.3rem')
             ->brandName('Jadwalin')
+            ->maxContentWidth(MaxWidth::Full)
             ->favicon(asset('assets/img/apple.png'))
             ->id('admin')
             ->path('admin')

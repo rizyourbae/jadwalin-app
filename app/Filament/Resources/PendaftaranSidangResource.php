@@ -5,17 +5,14 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PendaftaranSidangResource\Pages;
 use App\Filament\Resources\PendaftaranSidangResource\RelationManagers;
 use App\Models\PendaftaranSidang;
-use App\Models\Mahasiswa;
-use App\Models\JadwalSidang;
 use Filament\Forms\Components\{FileUpload, Section, Select, Textarea};
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Actions\Action;
-use Filament\Tables\Actions\{EditAction};
+use Filament\Tables\Actions\{ActionGroup, Action, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -102,7 +99,15 @@ class PendaftaranSidangResource extends Resource
                     ->searchable(),
                 TextColumn::make('jenis_sidang')
                     ->label('Jenis')
-                    ->badge(),
+                    ->badge()
+                    ->formatStateUsing(fn(string $state): string => Str::title(str_replace('_', ' ', $state)))
+                    // 2. Memberikan warna berbeda berdasarkan isinya
+                    ->color(fn(string $state): string => match ($state) {
+                        'seminar_proposal' => 'info',
+                        'seminar_hasil' => 'warning',
+                        'munaqasah' => 'success',
+                        default => 'gray',
+                    }),
                 TextColumn::make('status')
                     ->badge()
                     ->colors([
@@ -129,7 +134,20 @@ class PendaftaranSidangResource extends Resource
                     ]),
             ])
             ->actions([
-                EditAction::make(),
+                ActionGroup::make([
+                    ViewAction::make()
+                        ->label('Detail'),
+                    EditAction::make()
+                        ->label('Ubah'),
+                    DeleteAction::make()
+                        ->label('Hapus'),
+                ])
+                    ->label('Opsi') // Mengubah label default jika tidak pakai ikon
+                    ->icon('bi-gear-fill') // Mengganti ikon
+                    ->tooltip('Klik untuk melihat opsi lainnya') // Menambahkan tooltip
+                    ->color('info') // Mengubah warna tombol
+                    ->button()
+                    ->size('sm'), // Mengubah ukuran tombol
                 Action::make('buatJadwal')
                     ->label('Buat Jadwal')
                     ->icon('heroicon-o-calendar-days')
@@ -140,8 +158,8 @@ class PendaftaranSidangResource extends Resource
                     ->visible(fn(PendaftaranSidang $record): bool => $record->status === 'diverifikasi'),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -171,6 +189,7 @@ class PendaftaranSidangResource extends Resource
         return [
             'index' => Pages\ListPendaftaranSidangs::route('/'),
             'create' => Pages\CreatePendaftaranSidang::route('/create'),
+            'view' => Pages\ViewPendaftaranSidang::route('/{record}'),
             'edit' => Pages\EditPendaftaranSidang::route('/{record}/edit'),
         ];
     }

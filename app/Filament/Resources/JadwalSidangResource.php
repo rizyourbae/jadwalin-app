@@ -4,18 +4,13 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\JadwalSidangResource\Pages;
 use App\Filament\Resources\JadwalSidangResource\RelationManagers;
-use App\Models\JadwalSidang;
-use App\Models\PendaftaranSidang;
-use App\Models\Ruangan;
-use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TimePicker;
-use Filament\Forms\Get;
-use Filament\Forms\Form;
+use App\Models\{JadwalSidang, PendaftaranSidang, Ruangan};
+use Filament\Forms\Components\{DatePicker, Section, Select, TimePicker};
+use Filament\Forms\{Get, Form};
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Tables\Actions\{ActionGroup, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Auth;
@@ -116,9 +111,11 @@ class JadwalSidangResource extends Resource
                     ->label('Nama Mahasiswa')
                     ->searchable(),
                 TextColumn::make('tanggal_sidang')
+                    ->label('Tanggal Sidang')
                     ->date('d F Y')
                     ->sortable(),
                 TextColumn::make('waktu_mulai')
+                    ->label('Waktu Mulai')
                     ->time('H:i'),
                 TextColumn::make('ruangan.nama_ruangan')
                     ->label('Ruangan'),
@@ -129,11 +126,24 @@ class JadwalSidangResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                ActionGroup::make([
+                    ViewAction::make()
+                        ->label('Detail'),
+                    EditAction::make()
+                        ->label('Ubah'),
+                    DeleteAction::make()
+                        ->label('Hapus'),
+                ])
+                    ->label('Opsi') // Mengubah label default jika tidak pakai ikon
+                    ->icon('bi-gear-fill') // Mengganti ikon
+                    ->tooltip('Klik untuk melihat opsi lainnya') // Menambahkan tooltip
+                    ->color('info') // Mengubah warna tombol
+                    ->button()
+                    ->size('sm'), // Mengubah ukuran tombol
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -165,6 +175,7 @@ class JadwalSidangResource extends Resource
         return [
             'index' => Pages\ListJadwalSidangs::route('/'),
             'create' => Pages\CreateJadwalSidang::route('/create'),
+            'view' => Pages\ViewJadwalSidang::route('/{record}'),
             'edit' => Pages\EditJadwalSidang::route('/{record}/edit'),
         ];
     }

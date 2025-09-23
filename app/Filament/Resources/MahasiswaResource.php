@@ -4,17 +4,11 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\MahasiswaResource\Pages;
 use App\Models\Mahasiswa;
-use App\Models\User; // <-- Penting
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
-use Filament\Forms\Get;
+use App\Models\User;
+use Filament\Forms\Components\{Section, Select, Textarea, TextInput};
+use Filament\Forms\{Form, Get};
 use Filament\Resources\Resource;
-use Filament\Tables\Actions\BulkActionGroup;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\{ActionGroup, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Auth;
@@ -117,7 +111,20 @@ class MahasiswaResource extends Resource
                 //
             ])
             ->actions([
-                EditAction::make(),
+                ActionGroup::make([
+                    ViewAction::make()
+                        ->label('Detail'),
+                    EditAction::make()
+                        ->label('Ubah'),
+                    DeleteAction::make()
+                        ->label('Hapus'),
+                ])
+                    ->label('Opsi') // Mengubah label default jika tidak pakai ikon
+                    ->icon('bi-gear-fill') // Mengganti ikon
+                    ->tooltip('Klik untuk melihat opsi lainnya') // Menambahkan tooltip
+                    ->color('info') // Mengubah warna tombol
+                    ->button()
+                    ->size('sm'), // Mengubah ukuran tombol
             ])
             ->bulkActions([
                 BulkActionGroup::make([
@@ -151,6 +158,7 @@ class MahasiswaResource extends Resource
         return [
             'index' => Pages\ListMahasiswas::route('/'),
             'create' => Pages\CreateMahasiswa::route('/create'),
+            'view' => Pages\ViewMahasiswa::route('/{record}'),
             'edit' => Pages\EditMahasiswa::route('/{record}/edit'),
         ];
     }
