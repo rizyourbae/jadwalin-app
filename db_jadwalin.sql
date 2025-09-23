@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1deb3
+-- version 5.2.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Sep 19, 2025 at 06:57 PM
--- Server version: 8.0.43-0ubuntu0.24.04.2
--- PHP Version: 8.3.6
+-- Host: localhost
+-- Waktu pembuatan: 23 Sep 2025 pada 07.53
+-- Versi server: 8.0.43-0ubuntu0.24.04.2
+-- Versi PHP: 8.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cache`
+-- Struktur dari tabel `cache`
 --
 
 CREATE TABLE `cache` (
@@ -34,24 +34,26 @@ CREATE TABLE `cache` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `cache`
+-- Dumping data untuk tabel `cache`
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('laravel-cache-2e01e17467891f7c933dbaa00e1459d23db3fe4f', 'i:1;', 1758283473),
 ('laravel-cache-2e01e17467891f7c933dbaa00e1459d23db3fe4f:timer', 'i:1758283473;', 1758283473),
-('laravel-cache-livewire-rate-limiter:59d6ad626907b5a0341aba51c3754cd265bffec5', 'i:1;', 1758308193),
-('laravel-cache-livewire-rate-limiter:59d6ad626907b5a0341aba51c3754cd265bffec5:timer', 'i:1758308193;', 1758308193),
+('laravel-cache-356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1758595300),
+('laravel-cache-356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1758595300;', 1758595300),
+('laravel-cache-livewire-rate-limiter:59d6ad626907b5a0341aba51c3754cd265bffec5', 'i:2;', 1758613196),
+('laravel-cache-livewire-rate-limiter:59d6ad626907b5a0341aba51c3754cd265bffec5:timer', 'i:1758613196;', 1758613196),
 ('laravel-cache-livewire-rate-limiter:8ae29ab234c9b8dd1e46e0301fe142a53ec7cf83', 'i:1;', 1758304480),
 ('laravel-cache-livewire-rate-limiter:8ae29ab234c9b8dd1e46e0301fe142a53ec7cf83:timer', 'i:1758304480;', 1758304480),
 ('laravel-cache-livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1758295660),
 ('laravel-cache-livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1758295660;', 1758295660),
-('laravel-cache-spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:91:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:10:\"view_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:14:\"view_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:12:\"create_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:12:\"update_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:13:\"restore_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:17:\"restore_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:15:\"replicate_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:13:\"reorder_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:12:\"delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:16:\"delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:18:\"force_delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:22:\"force_delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:13:\"view_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:17:\"view_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:15:\"create_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:15:\"update_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:16:\"restore_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:20:\"restore_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:18:\"replicate_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:16:\"reorder_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:15:\"delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:19:\"delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:21:\"force_delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:25:\"force_delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:14:\"view_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:18:\"view_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:16:\"create_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:16:\"update_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:17:\"restore_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:21:\"restore_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:19:\"replicate_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:17:\"reorder_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:16:\"delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:20:\"delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:22:\"force_delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:26:\"force_delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:12:\"view_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:16:\"view_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:14:\"create_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:14:\"update_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:46;a:4:{s:1:\"a\";i:47;s:1:\"b\";s:15:\"restore_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:47;a:4:{s:1:\"a\";i:48;s:1:\"b\";s:19:\"restore_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:48;a:4:{s:1:\"a\";i:49;s:1:\"b\";s:17:\"replicate_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:49;a:4:{s:1:\"a\";i:50;s:1:\"b\";s:15:\"reorder_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:50;a:4:{s:1:\"a\";i:51;s:1:\"b\";s:14:\"delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:51;a:4:{s:1:\"a\";i:52;s:1:\"b\";s:18:\"delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:52;a:4:{s:1:\"a\";i:53;s:1:\"b\";s:20:\"force_delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:53;a:4:{s:1:\"a\";i:54;s:1:\"b\";s:24:\"force_delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:54;a:4:{s:1:\"a\";i:55;s:1:\"b\";s:19:\"view_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:55;a:4:{s:1:\"a\";i:56;s:1:\"b\";s:23:\"view_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:56;a:4:{s:1:\"a\";i:57;s:1:\"b\";s:21:\"create_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:57;a:4:{s:1:\"a\";i:58;s:1:\"b\";s:21:\"update_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:58;a:4:{s:1:\"a\";i:59;s:1:\"b\";s:22:\"restore_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:59;a:4:{s:1:\"a\";i:60;s:1:\"b\";s:26:\"restore_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:60;a:4:{s:1:\"a\";i:61;s:1:\"b\";s:24:\"replicate_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:61;a:4:{s:1:\"a\";i:62;s:1:\"b\";s:22:\"reorder_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:62;a:4:{s:1:\"a\";i:63;s:1:\"b\";s:21:\"delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:63;a:4:{s:1:\"a\";i:64;s:1:\"b\";s:25:\"delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:64;a:4:{s:1:\"a\";i:65;s:1:\"b\";s:27:\"force_delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:65;a:4:{s:1:\"a\";i:66;s:1:\"b\";s:31:\"force_delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:66;a:4:{s:1:\"a\";i:67;s:1:\"b\";s:24:\"view_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:67;a:4:{s:1:\"a\";i:68;s:1:\"b\";s:28:\"view_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:68;a:4:{s:1:\"a\";i:69;s:1:\"b\";s:26:\"create_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:69;a:4:{s:1:\"a\";i:70;s:1:\"b\";s:26:\"update_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:70;a:4:{s:1:\"a\";i:71;s:1:\"b\";s:27:\"restore_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:71;a:4:{s:1:\"a\";i:72;s:1:\"b\";s:31:\"restore_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:72;a:4:{s:1:\"a\";i:73;s:1:\"b\";s:29:\"replicate_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:73;a:4:{s:1:\"a\";i:74;s:1:\"b\";s:27:\"reorder_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:74;a:4:{s:1:\"a\";i:75;s:1:\"b\";s:26:\"delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:75;a:4:{s:1:\"a\";i:76;s:1:\"b\";s:30:\"delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:76;a:4:{s:1:\"a\";i:77;s:1:\"b\";s:32:\"force_delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:77;a:4:{s:1:\"a\";i:78;s:1:\"b\";s:36:\"force_delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:78;a:4:{s:1:\"a\";i:79;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:79;a:4:{s:1:\"a\";i:80;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:80;a:4:{s:1:\"a\";i:81;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:81;a:4:{s:1:\"a\";i:82;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:82;a:4:{s:1:\"a\";i:83;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:83;a:4:{s:1:\"a\";i:84;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:84;a:4:{s:1:\"a\";i:85;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:85;a:4:{s:1:\"a\";i:86;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:86;a:4:{s:1:\"a\";i:87;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:87;a:4:{s:1:\"a\";i:88;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:88;a:4:{s:1:\"a\";i:89;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:89;a:4:{s:1:\"a\";i:90;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:90;a:4:{s:1:\"a\";i:91;s:1:\"b\";s:23:\"page_MahasiswaDashboard\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:4:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}i:1;a:3:{s:1:\"a\";i:4;s:1:\"b\";s:5:\"admin\";s:1:\"c\";s:3:\"web\";}i:2;a:3:{s:1:\"a\";i:2;s:1:\"b\";s:5:\"dosen\";s:1:\"c\";s:3:\"web\";}i:3;a:3:{s:1:\"a\";i:3;s:1:\"b\";s:9:\"mahasiswa\";s:1:\"c\";s:3:\"web\";}}}', 1758384816);
+('laravel-cache-spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:94:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:10:\"view_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:14:\"view_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:12:\"create_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:12:\"update_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:13:\"restore_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:17:\"restore_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:15:\"replicate_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:13:\"reorder_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:12:\"delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:16:\"delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:18:\"force_delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:22:\"force_delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:13:\"view_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:17:\"view_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:15:\"create_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:15:\"update_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:16:\"restore_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:20:\"restore_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:18:\"replicate_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:16:\"reorder_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:15:\"delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:19:\"delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:21:\"force_delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:25:\"force_delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:14:\"view_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:18:\"view_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:16:\"create_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:16:\"update_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:17:\"restore_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:21:\"restore_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:19:\"replicate_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:17:\"reorder_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:16:\"delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:20:\"delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:22:\"force_delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:26:\"force_delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:12:\"view_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:16:\"view_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:14:\"create_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:14:\"update_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:46;a:4:{s:1:\"a\";i:47;s:1:\"b\";s:15:\"restore_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:47;a:4:{s:1:\"a\";i:48;s:1:\"b\";s:19:\"restore_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:48;a:4:{s:1:\"a\";i:49;s:1:\"b\";s:17:\"replicate_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:49;a:4:{s:1:\"a\";i:50;s:1:\"b\";s:15:\"reorder_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:50;a:4:{s:1:\"a\";i:51;s:1:\"b\";s:14:\"delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:51;a:4:{s:1:\"a\";i:52;s:1:\"b\";s:18:\"delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:52;a:4:{s:1:\"a\";i:53;s:1:\"b\";s:20:\"force_delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:53;a:4:{s:1:\"a\";i:54;s:1:\"b\";s:24:\"force_delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:54;a:4:{s:1:\"a\";i:55;s:1:\"b\";s:19:\"view_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:55;a:4:{s:1:\"a\";i:56;s:1:\"b\";s:23:\"view_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:56;a:4:{s:1:\"a\";i:57;s:1:\"b\";s:21:\"create_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:57;a:4:{s:1:\"a\";i:58;s:1:\"b\";s:21:\"update_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:58;a:4:{s:1:\"a\";i:59;s:1:\"b\";s:22:\"restore_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:59;a:4:{s:1:\"a\";i:60;s:1:\"b\";s:26:\"restore_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:60;a:4:{s:1:\"a\";i:61;s:1:\"b\";s:24:\"replicate_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:61;a:4:{s:1:\"a\";i:62;s:1:\"b\";s:22:\"reorder_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:62;a:4:{s:1:\"a\";i:63;s:1:\"b\";s:21:\"delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:63;a:4:{s:1:\"a\";i:64;s:1:\"b\";s:25:\"delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:64;a:4:{s:1:\"a\";i:65;s:1:\"b\";s:27:\"force_delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:65;a:4:{s:1:\"a\";i:66;s:1:\"b\";s:31:\"force_delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:66;a:4:{s:1:\"a\";i:67;s:1:\"b\";s:24:\"view_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:67;a:4:{s:1:\"a\";i:68;s:1:\"b\";s:28:\"view_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:68;a:4:{s:1:\"a\";i:69;s:1:\"b\";s:26:\"create_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:69;a:4:{s:1:\"a\";i:70;s:1:\"b\";s:26:\"update_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:70;a:4:{s:1:\"a\";i:71;s:1:\"b\";s:27:\"restore_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:71;a:4:{s:1:\"a\";i:72;s:1:\"b\";s:31:\"restore_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:72;a:4:{s:1:\"a\";i:73;s:1:\"b\";s:29:\"replicate_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:73;a:4:{s:1:\"a\";i:74;s:1:\"b\";s:27:\"reorder_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:74;a:4:{s:1:\"a\";i:75;s:1:\"b\";s:26:\"delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:75;a:4:{s:1:\"a\";i:76;s:1:\"b\";s:30:\"delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:76;a:4:{s:1:\"a\";i:77;s:1:\"b\";s:32:\"force_delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:77;a:4:{s:1:\"a\";i:78;s:1:\"b\";s:36:\"force_delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:78;a:4:{s:1:\"a\";i:79;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:79;a:4:{s:1:\"a\";i:80;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:80;a:4:{s:1:\"a\";i:81;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:81;a:4:{s:1:\"a\";i:82;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:82;a:4:{s:1:\"a\";i:83;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:83;a:4:{s:1:\"a\";i:84;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:84;a:4:{s:1:\"a\";i:85;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:85;a:4:{s:1:\"a\";i:86;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:86;a:4:{s:1:\"a\";i:87;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:87;a:4:{s:1:\"a\";i:88;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:88;a:4:{s:1:\"a\";i:89;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:89;a:4:{s:1:\"a\";i:90;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:90;a:4:{s:1:\"a\";i:91;s:1:\"b\";s:23:\"page_MahasiswaDashboard\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:91;a:4:{s:1:\"a\";i:92;s:1:\"b\";s:31:\"widget_PendaftaranTerbaruWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:92;a:4:{s:1:\"a\";i:93;s:1:\"b\";s:26:\"widget_StatsOverviewWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:93;a:4:{s:1:\"a\";i:94;s:1:\"b\";s:26:\"widget_RiwayatSidangWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:4:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}i:1;a:3:{s:1:\"a\";i:4;s:1:\"b\";s:5:\"admin\";s:1:\"c\";s:3:\"web\";}i:2;a:3:{s:1:\"a\";i:2;s:1:\"b\";s:5:\"dosen\";s:1:\"c\";s:3:\"web\";}i:3;a:3:{s:1:\"a\";i:3;s:1:\"b\";s:9:\"mahasiswa\";s:1:\"c\";s:3:\"web\";}}}', 1758697482);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cache_locks`
+-- Struktur dari tabel `cache_locks`
 --
 
 CREATE TABLE `cache_locks` (
@@ -63,7 +65,7 @@ CREATE TABLE `cache_locks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dosens`
+-- Struktur dari tabel `dosens`
 --
 
 CREATE TABLE `dosens` (
@@ -78,11 +80,11 @@ CREATE TABLE `dosens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `dosens`
+-- Dumping data untuk tabel `dosens`
 --
 
 INSERT INTO `dosens` (`id`, `user_id`, `fakultas_id`, `nip`, `gelar_depan`, `gelar_belakang`, `created_at`, `updated_at`) VALUES
-(1, 6, 1, '19990208202501005', NULL, 'M.Pd', '2025-09-18 06:06:04', '2025-09-18 06:06:04'),
+(1, 6, 1, '19990208202501005', 'Dr.', 'M.Pd', '2025-09-18 06:06:04', '2025-09-22 19:53:24'),
 (2, 7, 1, '198322864920155831', NULL, ', M.Ag.', '2025-09-18 06:25:04', '2025-09-18 06:25:04'),
 (3, 8, 1, '198396336820166764', 'Dr.', ', M.Kom.', '2025-09-18 06:25:04', '2025-09-18 06:25:04'),
 (4, 9, 1, '198926808920151391', NULL, ', M.Pd.', '2025-09-18 06:25:04', '2025-09-18 06:25:04'),
@@ -111,7 +113,7 @@ INSERT INTO `dosens` (`id`, `user_id`, `fakultas_id`, `nip`, `gelar_depan`, `gel
 -- --------------------------------------------------------
 
 --
--- Table structure for table `failed_jobs`
+-- Struktur dari tabel `failed_jobs`
 --
 
 CREATE TABLE `failed_jobs` (
@@ -127,7 +129,7 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fakultas`
+-- Struktur dari tabel `fakultas`
 --
 
 CREATE TABLE `fakultas` (
@@ -139,7 +141,7 @@ CREATE TABLE `fakultas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `fakultas`
+-- Dumping data untuk tabel `fakultas`
 --
 
 INSERT INTO `fakultas` (`id`, `nama_fakultas`, `kode_fakultas`, `created_at`, `updated_at`) VALUES
@@ -151,7 +153,7 @@ INSERT INTO `fakultas` (`id`, `nama_fakultas`, `kode_fakultas`, `created_at`, `u
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jadwal_sidangs`
+-- Struktur dari tabel `jadwal_sidangs`
 --
 
 CREATE TABLE `jadwal_sidangs` (
@@ -168,7 +170,7 @@ CREATE TABLE `jadwal_sidangs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `jadwal_sidangs`
+-- Dumping data untuk tabel `jadwal_sidangs`
 --
 
 INSERT INTO `jadwal_sidangs` (`id`, `pendaftaran_sidang_id`, `ruangan_id`, `tanggal_sidang`, `waktu_mulai`, `waktu_selesai`, `penguji1_id`, `penguji2_id`, `created_at`, `updated_at`) VALUES
@@ -180,7 +182,7 @@ INSERT INTO `jadwal_sidangs` (`id`, `pendaftaran_sidang_id`, `ruangan_id`, `tang
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jobs`
+-- Struktur dari tabel `jobs`
 --
 
 CREATE TABLE `jobs` (
@@ -196,7 +198,7 @@ CREATE TABLE `jobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `job_batches`
+-- Struktur dari tabel `job_batches`
 --
 
 CREATE TABLE `job_batches` (
@@ -215,7 +217,7 @@ CREATE TABLE `job_batches` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswas`
+-- Struktur dari tabel `mahasiswas`
 --
 
 CREATE TABLE `mahasiswas` (
@@ -231,18 +233,58 @@ CREATE TABLE `mahasiswas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `mahasiswas`
+-- Dumping data untuk tabel `mahasiswas`
 --
 
 INSERT INTO `mahasiswas` (`id`, `user_id`, `fakultas_id`, `nim`, `judul_skripsi`, `pembimbing1_id`, `pembimbing2_id`, `created_at`, `updated_at`) VALUES
 (1, 27, 2, '1715025096', 'Mengapa Dunia Ini Kacau Bro', 9, 7, '2025-09-18 06:28:48', '2025-09-18 06:28:48'),
 (3, 47, 2, '1715025097', '-', 7, 8, '2025-09-18 20:07:35', '2025-09-18 20:07:35'),
-(4, 49, 1, '2111223344', NULL, 1, 2, '2025-09-19 03:24:30', '2025-09-19 03:39:31');
+(4, 49, 1, '2111223344', NULL, 1, 2, '2025-09-19 03:24:30', '2025-09-19 03:39:31'),
+(5, 50, 1, '219689477', NULL, 23, 4, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(6, 51, 1, '214788695', NULL, 5, 2, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(7, 52, 1, '211520023', NULL, 23, 2, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(8, 53, 1, '218186664', NULL, 6, 2, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(9, 54, 1, '217467851', NULL, 1, 23, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(10, 55, 1, '219259118', NULL, 1, 3, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(11, 56, 1, '217109092', NULL, 22, 6, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(12, 57, 1, '217264492', NULL, 22, 5, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(13, 58, 1, '211865777', NULL, 2, 3, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(14, 59, 1, '211233834', NULL, 2, 1, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(15, 60, 2, '216652813', NULL, 9, 7, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(16, 61, 2, '210175675', NULL, 28, 7, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(17, 62, 2, '219059896', NULL, 10, 7, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(18, 63, 2, '213239488', NULL, 10, 10, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(19, 64, 2, '211266797', NULL, 11, 28, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(20, 65, 2, '213868748', NULL, 9, 11, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(21, 66, 2, '218583820', NULL, 7, 7, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(22, 67, 2, '218794492', NULL, 9, 11, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(23, 68, 2, '218341236', NULL, 7, 7, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(24, 69, 2, '213352625', NULL, 10, 9, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(25, 70, 3, '212976664', NULL, 12, 15, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(26, 71, 3, '215230191', NULL, 16, 15, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(27, 72, 3, '217575349', NULL, 16, 15, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(28, 73, 3, '211035215', NULL, 13, 16, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(29, 74, 3, '216980403', NULL, 15, 14, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(30, 75, 3, '212292682', NULL, 14, 16, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(31, 76, 3, '215263238', NULL, 13, 12, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(32, 77, 3, '219085010', NULL, 12, 16, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(33, 78, 3, '212582129', NULL, 13, 13, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(34, 79, 3, '211990057', NULL, 13, 12, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(35, 80, 4, '210546249', NULL, 19, 18, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(36, 81, 4, '216172830', NULL, 17, 17, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(37, 82, 4, '213807401', NULL, 17, 24, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(38, 83, 4, '212973571', NULL, 20, 21, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(39, 84, 4, '210814243', NULL, 18, 18, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(40, 85, 4, '216583009', NULL, 21, 24, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(41, 86, 4, '212383182', NULL, 17, 21, '2025-09-22 19:15:27', '2025-09-22 19:15:27'),
+(42, 87, 4, '211739582', NULL, 21, 18, '2025-09-22 19:15:28', '2025-09-22 19:15:28'),
+(43, 88, 4, '213348220', NULL, 21, 21, '2025-09-22 19:15:28', '2025-09-22 19:15:28'),
+(44, 89, 4, '210036464', NULL, 17, 19, '2025-09-22 19:15:28', '2025-09-22 19:15:28');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Struktur dari tabel `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -252,7 +294,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Dumping data untuk tabel `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -271,7 +313,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `model_has_permissions`
+-- Struktur dari tabel `model_has_permissions`
 --
 
 CREATE TABLE `model_has_permissions` (
@@ -283,7 +325,7 @@ CREATE TABLE `model_has_permissions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `model_has_roles`
+-- Struktur dari tabel `model_has_roles`
 --
 
 CREATE TABLE `model_has_roles` (
@@ -293,7 +335,7 @@ CREATE TABLE `model_has_roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `model_has_roles`
+-- Dumping data untuk tabel `model_has_roles`
 --
 
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
@@ -341,12 +383,52 @@ INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (3, 'App\\Models\\User', 46),
 (3, 'App\\Models\\User', 47),
 (4, 'App\\Models\\User', 48),
-(3, 'App\\Models\\User', 49);
+(3, 'App\\Models\\User', 49),
+(3, 'App\\Models\\User', 50),
+(3, 'App\\Models\\User', 51),
+(3, 'App\\Models\\User', 52),
+(3, 'App\\Models\\User', 53),
+(3, 'App\\Models\\User', 54),
+(3, 'App\\Models\\User', 55),
+(3, 'App\\Models\\User', 56),
+(3, 'App\\Models\\User', 57),
+(3, 'App\\Models\\User', 58),
+(3, 'App\\Models\\User', 59),
+(3, 'App\\Models\\User', 60),
+(3, 'App\\Models\\User', 61),
+(3, 'App\\Models\\User', 62),
+(3, 'App\\Models\\User', 63),
+(3, 'App\\Models\\User', 64),
+(3, 'App\\Models\\User', 65),
+(3, 'App\\Models\\User', 66),
+(3, 'App\\Models\\User', 67),
+(3, 'App\\Models\\User', 68),
+(3, 'App\\Models\\User', 69),
+(3, 'App\\Models\\User', 70),
+(3, 'App\\Models\\User', 71),
+(3, 'App\\Models\\User', 72),
+(3, 'App\\Models\\User', 73),
+(3, 'App\\Models\\User', 74),
+(3, 'App\\Models\\User', 75),
+(3, 'App\\Models\\User', 76),
+(3, 'App\\Models\\User', 77),
+(3, 'App\\Models\\User', 78),
+(3, 'App\\Models\\User', 79),
+(3, 'App\\Models\\User', 80),
+(3, 'App\\Models\\User', 81),
+(3, 'App\\Models\\User', 82),
+(3, 'App\\Models\\User', 83),
+(3, 'App\\Models\\User', 84),
+(3, 'App\\Models\\User', 85),
+(3, 'App\\Models\\User', 86),
+(3, 'App\\Models\\User', 87),
+(3, 'App\\Models\\User', 88),
+(3, 'App\\Models\\User', 89);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_reset_tokens`
+-- Struktur dari tabel `password_reset_tokens`
 --
 
 CREATE TABLE `password_reset_tokens` (
@@ -358,7 +440,7 @@ CREATE TABLE `password_reset_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pendaftaran_sidang`
+-- Struktur dari tabel `pendaftaran_sidang`
 --
 
 CREATE TABLE `pendaftaran_sidang` (
@@ -376,20 +458,20 @@ CREATE TABLE `pendaftaran_sidang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `pendaftaran_sidang`
+-- Dumping data untuk tabel `pendaftaran_sidang`
 --
 
 INSERT INTO `pendaftaran_sidang` (`id`, `mahasiswa_id`, `fakultas_id`, `jenis_sidang`, `judul`, `berkas_utama`, `berkas_pendukung`, `status`, `catatan_admin`, `created_at`, `updated_at`) VALUES
-(1, 1, 2, 'seminar_proposal', 'Uji Coba Sistem Penjadwalan', '01K5EP093W0F5GZB3V1GYEKBD0.pdf', NULL, 'selesai', NULL, '2025-09-18 07:10:05', '2025-09-18 07:48:00'),
+(1, 1, 2, 'seminar_proposal', 'Uji Coba Sistem Penjadwalan', 'documents/skripsi/01K5T4NPD51KYW48Z8CX175DYF.pdf', NULL, 'selesai', NULL, '2025-09-18 07:10:05', '2025-09-22 17:58:06'),
 (2, 1, 2, 'seminar_hasil', 'Uji Coba Sistem Penjadwalan', 'public/berkas_sidang/6Eep8JHDjnyRFlG2likF5o7TmmKErb3jcDh3durH.pdf', NULL, 'diajukan', NULL, '2025-09-18 07:48:45', '2025-09-18 07:48:45'),
 (3, 4, 1, 'seminar_proposal', 'Analisa Sistem Jadwalin', 'documents/skripsi/01K5GWJJ3ZFSV1D8CTD5R3Q7MH.pdf', NULL, 'selesai', NULL, '2025-09-19 03:43:25', '2025-09-19 04:00:46'),
-(4, 4, 1, 'seminar_hasil', 'Analisa Sistem Jadwalin', 'documents/skripsi/01K5GXK1Y4GEPN1QNZ11D8SBST.pdf', NULL, 'selesai', NULL, '2025-09-19 04:01:10', '2025-09-19 04:03:18'),
+(4, 4, 1, 'seminar_hasil', 'Analisa Sistem Jadwalin', 'documents/skripsi/01K5T73R3T5BTYGTY6XG0E62N4.pdf', NULL, 'selesai', 'Bodo Kau', '2025-09-19 04:01:10', '2025-09-22 18:40:44'),
 (5, 4, 1, 'munaqasah', 'Analisa', 'documents/skripsi/01K5GXQG0KE7JYWCRMB32F1JRD.pdf', NULL, 'selesai', NULL, '2025-09-19 04:03:35', '2025-09-19 04:05:06');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permissions`
+-- Struktur dari tabel `permissions`
 --
 
 CREATE TABLE `permissions` (
@@ -401,7 +483,7 @@ CREATE TABLE `permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permissions`
+-- Dumping data untuk tabel `permissions`
 --
 
 INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
@@ -495,12 +577,15 @@ INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at
 (88, 'delete_any_user', 'web', '2025-09-18 09:14:09', '2025-09-18 09:14:09'),
 (89, 'force_delete_user', 'web', '2025-09-18 09:14:09', '2025-09-18 09:14:09'),
 (90, 'force_delete_any_user', 'web', '2025-09-18 09:14:09', '2025-09-18 09:14:09'),
-(91, 'page_MahasiswaDashboard', 'web', '2025-09-19 03:09:06', '2025-09-19 03:09:06');
+(91, 'page_MahasiswaDashboard', 'web', '2025-09-19 03:09:06', '2025-09-19 03:09:06'),
+(92, 'widget_PendaftaranTerbaruWidget', 'web', '2025-09-22 22:55:56', '2025-09-22 22:55:56'),
+(93, 'widget_StatsOverviewWidget', 'web', '2025-09-22 23:01:35', '2025-09-22 23:01:35'),
+(94, 'widget_RiwayatSidangWidget', 'web', '2025-09-22 23:01:35', '2025-09-22 23:01:35');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Struktur dari tabel `roles`
 --
 
 CREATE TABLE `roles` (
@@ -512,7 +597,7 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `roles`
+-- Dumping data untuk tabel `roles`
 --
 
 INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
@@ -524,7 +609,7 @@ INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `role_has_permissions`
+-- Struktur dari tabel `role_has_permissions`
 --
 
 CREATE TABLE `role_has_permissions` (
@@ -533,7 +618,7 @@ CREATE TABLE `role_has_permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `role_has_permissions`
+-- Dumping data untuk tabel `role_has_permissions`
 --
 
 INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
@@ -628,9 +713,13 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (89, 1),
 (90, 1),
 (91, 1),
+(92, 1),
+(93, 1),
+(94, 1),
 (19, 2),
 (20, 2),
 (44, 2),
+(93, 2),
 (67, 3),
 (68, 3),
 (69, 3),
@@ -710,7 +799,7 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ruangans`
+-- Struktur dari tabel `ruangans`
 --
 
 CREATE TABLE `ruangans` (
@@ -724,7 +813,7 @@ CREATE TABLE `ruangans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ruangans`
+-- Dumping data untuk tabel `ruangans`
 --
 
 INSERT INTO `ruangans` (`id`, `fakultas_id`, `nama_ruangan`, `kode_ruangan`, `kapasitas`, `created_at`, `updated_at`) VALUES
@@ -740,7 +829,7 @@ INSERT INTO `ruangans` (`id`, `fakultas_id`, `nama_ruangan`, `kode_ruangan`, `ka
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sessions`
+-- Struktur dari tabel `sessions`
 --
 
 CREATE TABLE `sessions` (
@@ -753,18 +842,16 @@ CREATE TABLE `sessions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `sessions`
+-- Dumping data untuk tabel `sessions`
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('dozjeVyXMyj91jkGIHtrjNXlOz3sYwcZKGCqvBRV', NULL, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibjNGOUliSm02VXhUdHExUEpJZjlhbzlkZGE0YzYzbWlzM2JnVlU2bSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9sb2dpbiI7fX0=', 1758308137),
-('IZJVKiCIV4eS4SV4JgLUk9wrOh3R1zptVJ76BGFR', 1, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoidXFaMXZqZHhhdWdiRGRGQ3R1Z1dpdmh5YURGZ2N3MzhzWnptR0M2aSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9mYWt1bHRhcyI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRQZG5NeDhNTkFmejltckpBaU5CN08uYnpwZGF6Zm9BOXUvZEVLMnJ5MXkwYmd2QlFLMU1LbSI7fQ==', 1758302396),
-('JUUprvPZ9FI62tLqHUjxNZQlpQRiC2SG6Z2G12hW', NULL, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicExHUWtxSjBsSzZaajltS0NJMmZOeGtVZVNPdmU0M0JuaFZWaDhraCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9tYWhhc2lzd2EvbG9naW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1758295986);
+('Q4P2BJcMnwnq0twZQGuv6in1tBzmaFTKq3I0P8V9', 43, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiOURIY1UxY25LbUVGM0NNSUVSREl2WjdXUG9ocDBQQTBGbU8yb09NYiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjQzO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkcklJdm1uZUdRODlsQWpqNk1ULkZlT2ZNd2Z3MkIuelF1Tkl2SGpTdWplS1QwVEJ4NGVoT2UiO30=', 1758613488);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -781,7 +868,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`, `fakultas_id`) VALUES
@@ -818,26 +905,66 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ro
 (45, 'Amru', 'amru@uinsi.ac.id', NULL, '$2y$12$LJd3NLeLSO.Fw5hVmEumauScYkXJa2JrjO6bFpCsnKzt8B9pgywdG', 'dosen', NULL, '2025-09-18 20:00:58', '2025-09-18 20:00:58', 2),
 (47, 'Amru Hasan', 'amru12@uinsi.ac.id', NULL, '$2y$12$5pVgo8asXuw1/IhoAxEKTuy0X70cW8E4CBvIqWmzGeM5V7B9pARV6', 'mahasiswa', NULL, '2025-09-18 20:07:35', '2025-09-18 20:07:35', 2),
 (48, 'Admin FASYA', 'adminfasya@uinsi.ac.id', NULL, '$2y$12$qj6ApV8FhyKSafIfQpI3N.WZ/A62zle2Blh9/I4rXBWUyRfxTLe5m', 'superadmin', NULL, '2025-09-18 22:26:27', '2025-09-18 22:26:27', 3),
-(49, 'Budi Santoso', 'budi.santoso@uinsi.ac.id', NULL, '$2y$12$fcHO.Y2QDcz5unsxESpe1u4hk7.UIOHrXsHE0U9wVM89cfllLyHqi', 'mahasiswa', NULL, '2025-09-19 03:24:30', '2025-09-19 03:24:30', 1);
+(49, 'Budi Santoso', 'budi.santoso@uinsi.ac.id', NULL, '$2y$12$fcHO.Y2QDcz5unsxESpe1u4hk7.UIOHrXsHE0U9wVM89cfllLyHqi', 'mahasiswa', NULL, '2025-09-19 03:24:30', '2025-09-19 03:24:30', 1),
+(50, 'Milan Schaefer', 'celine19@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '4CouEQfJKl', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(51, 'Logan Hamill', 'kavon57@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Sxr0f4BjL8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(52, 'Nelle Wolff', 'elowe@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Fj6MzcUq0e', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(53, 'Travon Denesik', 'tschuster@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'hINzWoxnuu', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(54, 'Amie Weissnat', 'bmcglynn@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Y4cacsZxw4', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(55, 'Bernice Hoeger', 'tevin23@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'owcv6D2GmX', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(56, 'Marcelino Keeling IV', 'rusty10@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'IwwScR2WZ8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(57, 'Dr. Tara Goodwin', 'mohammad08@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 's2aQ24Yg2S', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(58, 'Sim Murray', 'sroob@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '820vrvyjMn', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(59, 'Osvaldo Keeling', 'barrows.savanna@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '7r8G7GdEWL', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
+(60, 'Prof. Linwood Mayert', 'kklocko@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Deaokw4MDg', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(61, 'Mr. Liam Weber III', 'aboehm@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '6FMmmmAZFQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(62, 'Ozella Kuhlman V', 'destany29@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'KCcL5YVjlm', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(63, 'Rex Predovic', 'greenholt.liliana@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'wDjNtZMUSS', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(64, 'Oral Swift', 'lucius.okuneva@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'an1dOnw56K', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(65, 'Mittie Bauch', 'wisozk.ethyl@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '9fN4mUTWq8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(66, 'Mr. Ariel Russel V', 'dietrich.ettie@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'qHpKZhsqIz', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(67, 'Renee Deckow', 'maximillian50@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'nBnyiGd4AW', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(68, 'Mrs. Kariane O\'Keefe MD', 'ullrich.christophe@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'jau6P0HwTU', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(69, 'Sally Von', 'dgislason@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'XjmCGPDFK0', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
+(70, 'Karley Luettgen PhD', 'mccullough.aaron@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'mMBWmab47I', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(71, 'Nicolas Sawayn', 'gsimonis@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'gRYbOxi3sQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(72, 'Eddie Mayer DVM', 'marty94@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'DllTPD1bLs', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(73, 'Janis Fisher', 'trutherford@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '0Eyhzbyobh', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(74, 'Hubert Reinger', 'elta14@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '8XPNNZdznJ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(75, 'Mr. Fletcher Cremin', 'keeling.dayna@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'DXWZdACstH', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(76, 'Darryl Gaylord Sr.', 'dayne.price@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'OwaPUpqmqW', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(77, 'Domenico Pollich', 'chaim18@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'iXr0Slx9XD', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(78, 'Gianni Spencer', 'ayden48@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'xqfjLYaNE8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(79, 'Ms. Itzel Wiegand', 'runte.hulda@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'gFyXohaWkE', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
+(80, 'Misty Ferry', 'earmstrong@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'JLPNJpxGOr', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(81, 'Zachery Jenkins I', 'emmanuelle.schmidt@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'r5H49SyByu', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(82, 'Miss Kaitlyn Donnelly', 'flavie.hilpert@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'tH2XCcPipQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(83, 'Mrs. Aleen Hirthe DVM', 'rippin.anderson@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'htRnuJemB7', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(84, 'Dr. Deion McKenzie V', 'uvonrueden@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'KdcCKnyctb', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(85, 'Myron Swift', 'ernie48@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'JHAkiHIby4', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(86, 'Prof. Zachary Bartoletti Jr.', 'qdicki@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'baHODcqezk', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(87, 'Prof. Ellis Quitzon II', 'leopoldo10@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '1CWbx67zDq', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(88, 'Miss Patricia Waters PhD', 'zboncak.crystal@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'tEXUbGfXV7', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
+(89, 'Clark Runolfsson', 'clemmie.davis@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Eoj5Dj28aZ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `cache`
+-- Indeks untuk tabel `cache`
 --
 ALTER TABLE `cache`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `cache_locks`
+-- Indeks untuk tabel `cache_locks`
 --
 ALTER TABLE `cache_locks`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `dosens`
+-- Indeks untuk tabel `dosens`
 --
 ALTER TABLE `dosens`
   ADD PRIMARY KEY (`id`),
@@ -846,21 +973,21 @@ ALTER TABLE `dosens`
   ADD KEY `dosens_fakultas_id_foreign` (`fakultas_id`);
 
 --
--- Indexes for table `failed_jobs`
+-- Indeks untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `fakultas`
+-- Indeks untuk tabel `fakultas`
 --
 ALTER TABLE `fakultas`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `fakultas_kode_fakultas_unique` (`kode_fakultas`);
 
 --
--- Indexes for table `jadwal_sidangs`
+-- Indeks untuk tabel `jadwal_sidangs`
 --
 ALTER TABLE `jadwal_sidangs`
   ADD PRIMARY KEY (`id`),
@@ -870,20 +997,20 @@ ALTER TABLE `jadwal_sidangs`
   ADD KEY `jadwal_sidangs_penguji2_id_foreign` (`penguji2_id`);
 
 --
--- Indexes for table `jobs`
+-- Indeks untuk tabel `jobs`
 --
 ALTER TABLE `jobs`
   ADD PRIMARY KEY (`id`),
   ADD KEY `jobs_queue_index` (`queue`);
 
 --
--- Indexes for table `job_batches`
+-- Indeks untuk tabel `job_batches`
 --
 ALTER TABLE `job_batches`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `mahasiswas`
+-- Indeks untuk tabel `mahasiswas`
 --
 ALTER TABLE `mahasiswas`
   ADD PRIMARY KEY (`id`),
@@ -894,33 +1021,33 @@ ALTER TABLE `mahasiswas`
   ADD KEY `mahasiswas_pembimbing2_id_foreign` (`pembimbing2_id`);
 
 --
--- Indexes for table `migrations`
+-- Indeks untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `model_has_permissions`
+-- Indeks untuk tabel `model_has_permissions`
 --
 ALTER TABLE `model_has_permissions`
   ADD PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
   ADD KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`);
 
 --
--- Indexes for table `model_has_roles`
+-- Indeks untuk tabel `model_has_roles`
 --
 ALTER TABLE `model_has_roles`
   ADD PRIMARY KEY (`role_id`,`model_id`,`model_type`),
   ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
 
 --
--- Indexes for table `password_reset_tokens`
+-- Indeks untuk tabel `password_reset_tokens`
 --
 ALTER TABLE `password_reset_tokens`
   ADD PRIMARY KEY (`email`);
 
 --
--- Indexes for table `pendaftaran_sidang`
+-- Indeks untuk tabel `pendaftaran_sidang`
 --
 ALTER TABLE `pendaftaran_sidang`
   ADD PRIMARY KEY (`id`),
@@ -928,28 +1055,28 @@ ALTER TABLE `pendaftaran_sidang`
   ADD KEY `pendaftaran_sidang_fakultas_id_foreign` (`fakultas_id`);
 
 --
--- Indexes for table `permissions`
+-- Indeks untuk tabel `permissions`
 --
 ALTER TABLE `permissions`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`);
 
 --
--- Indexes for table `roles`
+-- Indeks untuk tabel `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `roles_name_guard_name_unique` (`name`,`guard_name`);
 
 --
--- Indexes for table `role_has_permissions`
+-- Indeks untuk tabel `role_has_permissions`
 --
 ALTER TABLE `role_has_permissions`
   ADD PRIMARY KEY (`permission_id`,`role_id`),
   ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `ruangans`
+-- Indeks untuk tabel `ruangans`
 --
 ALTER TABLE `ruangans`
   ADD PRIMARY KEY (`id`),
@@ -957,7 +1084,7 @@ ALTER TABLE `ruangans`
   ADD KEY `ruangans_fakultas_id_foreign` (`fakultas_id`);
 
 --
--- Indexes for table `sessions`
+-- Indeks untuk tabel `sessions`
 --
 ALTER TABLE `sessions`
   ADD PRIMARY KEY (`id`),
@@ -965,7 +1092,7 @@ ALTER TABLE `sessions`
   ADD KEY `sessions_last_activity_index` (`last_activity`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
@@ -973,94 +1100,94 @@ ALTER TABLE `users`
   ADD KEY `users_fakultas_id_foreign` (`fakultas_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `dosens`
+-- AUTO_INCREMENT untuk tabel `dosens`
 --
 ALTER TABLE `dosens`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT for table `failed_jobs`
+-- AUTO_INCREMENT untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `fakultas`
+-- AUTO_INCREMENT untuk tabel `fakultas`
 --
 ALTER TABLE `fakultas`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jadwal_sidangs`
+-- AUTO_INCREMENT untuk tabel `jadwal_sidangs`
 --
 ALTER TABLE `jadwal_sidangs`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jobs`
+-- AUTO_INCREMENT untuk tabel `jobs`
 --
 ALTER TABLE `jobs`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `mahasiswas`
+-- AUTO_INCREMENT untuk tabel `mahasiswas`
 --
 ALTER TABLE `mahasiswas`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `pendaftaran_sidang`
+-- AUTO_INCREMENT untuk tabel `pendaftaran_sidang`
 --
 ALTER TABLE `pendaftaran_sidang`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `permissions`
+-- AUTO_INCREMENT untuk tabel `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT untuk tabel `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `ruangans`
+-- AUTO_INCREMENT untuk tabel `ruangans`
 --
 ALTER TABLE `ruangans`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `dosens`
+-- Ketidakleluasaan untuk tabel `dosens`
 --
 ALTER TABLE `dosens`
   ADD CONSTRAINT `dosens_fakultas_id_foreign` FOREIGN KEY (`fakultas_id`) REFERENCES `fakultas` (`id`),
   ADD CONSTRAINT `dosens_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `jadwal_sidangs`
+-- Ketidakleluasaan untuk tabel `jadwal_sidangs`
 --
 ALTER TABLE `jadwal_sidangs`
   ADD CONSTRAINT `jadwal_sidangs_pendaftaran_sidang_id_foreign` FOREIGN KEY (`pendaftaran_sidang_id`) REFERENCES `pendaftaran_sidang` (`id`),
@@ -1069,7 +1196,7 @@ ALTER TABLE `jadwal_sidangs`
   ADD CONSTRAINT `jadwal_sidangs_ruangan_id_foreign` FOREIGN KEY (`ruangan_id`) REFERENCES `ruangans` (`id`);
 
 --
--- Constraints for table `mahasiswas`
+-- Ketidakleluasaan untuk tabel `mahasiswas`
 --
 ALTER TABLE `mahasiswas`
   ADD CONSTRAINT `mahasiswas_fakultas_id_foreign` FOREIGN KEY (`fakultas_id`) REFERENCES `fakultas` (`id`),
@@ -1078,39 +1205,39 @@ ALTER TABLE `mahasiswas`
   ADD CONSTRAINT `mahasiswas_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `model_has_permissions`
+-- Ketidakleluasaan untuk tabel `model_has_permissions`
 --
 ALTER TABLE `model_has_permissions`
   ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `model_has_roles`
+-- Ketidakleluasaan untuk tabel `model_has_roles`
 --
 ALTER TABLE `model_has_roles`
   ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `pendaftaran_sidang`
+-- Ketidakleluasaan untuk tabel `pendaftaran_sidang`
 --
 ALTER TABLE `pendaftaran_sidang`
   ADD CONSTRAINT `pendaftaran_sidang_fakultas_id_foreign` FOREIGN KEY (`fakultas_id`) REFERENCES `fakultas` (`id`),
   ADD CONSTRAINT `pendaftaran_sidang_mahasiswa_id_foreign` FOREIGN KEY (`mahasiswa_id`) REFERENCES `mahasiswas` (`id`);
 
 --
--- Constraints for table `role_has_permissions`
+-- Ketidakleluasaan untuk tabel `role_has_permissions`
 --
 ALTER TABLE `role_has_permissions`
   ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `ruangans`
+-- Ketidakleluasaan untuk tabel `ruangans`
 --
 ALTER TABLE `ruangans`
   ADD CONSTRAINT `ruangans_fakultas_id_foreign` FOREIGN KEY (`fakultas_id`) REFERENCES `fakultas` (`id`);
 
 --
--- Constraints for table `users`
+-- Ketidakleluasaan untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_fakultas_id_foreign` FOREIGN KEY (`fakultas_id`) REFERENCES `fakultas` (`id`);
