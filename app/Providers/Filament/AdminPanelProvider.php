@@ -67,9 +67,10 @@ class AdminPanelProvider extends PanelProvider
                     ->setSort(10)
                     ->shouldShowAvatarForm(
                         value: true,
-                        directory: 'avatars', // image will be stored in 'storage/app/public/avatars
+                        directory: 'avatars',
                     )
-                    ->setIcon('heroicon-o-user'),
+                    ->setIcon('heroicon-o-user')
+                    ->setNavigationLabel('My Profile'),
             ])
             ->authMiddleware([
                 EnsureUserIsAdmin::class,

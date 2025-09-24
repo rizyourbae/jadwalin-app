@@ -20,6 +20,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Http\Middleware\EnsureUserHasMahasiswaRole;
 use Filament\Support\Enums\MaxWidth;
 use App\Filament\Mahasiswa\Pages\Login;
+use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
 
 class MahasiswaPanelProvider extends PanelProvider
 {
@@ -62,6 +63,16 @@ class MahasiswaPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 EnsureUserHasMahasiswaRole::class,
+            ])
+            ->plugins([
+                FilamentEditProfilePlugin::make()
+                    ->setSort(10)
+                    ->shouldShowAvatarForm(
+                        value: true,
+                        directory: 'avatars',
+                    )
+                    ->setIcon('heroicon-o-user')
+                    ->setNavigationLabel('My Profile'),
             ]);
     }
 }
