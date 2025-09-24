@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 23 Sep 2025 pada 07.53
+-- Waktu pembuatan: 24 Sep 2025 pada 08.00
 -- Versi server: 8.0.43-0ubuntu0.24.04.2
 -- Versi PHP: 8.3.6
 
@@ -38,17 +38,7 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel-cache-2e01e17467891f7c933dbaa00e1459d23db3fe4f', 'i:1;', 1758283473),
-('laravel-cache-2e01e17467891f7c933dbaa00e1459d23db3fe4f:timer', 'i:1758283473;', 1758283473),
-('laravel-cache-356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1758595300),
-('laravel-cache-356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1758595300;', 1758595300),
-('laravel-cache-livewire-rate-limiter:59d6ad626907b5a0341aba51c3754cd265bffec5', 'i:2;', 1758613196),
-('laravel-cache-livewire-rate-limiter:59d6ad626907b5a0341aba51c3754cd265bffec5:timer', 'i:1758613196;', 1758613196),
-('laravel-cache-livewire-rate-limiter:8ae29ab234c9b8dd1e46e0301fe142a53ec7cf83', 'i:1;', 1758304480),
-('laravel-cache-livewire-rate-limiter:8ae29ab234c9b8dd1e46e0301fe142a53ec7cf83:timer', 'i:1758304480;', 1758304480),
-('laravel-cache-livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1758295660),
-('laravel-cache-livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1758295660;', 1758295660),
-('laravel-cache-spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:94:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:10:\"view_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:14:\"view_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:12:\"create_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:12:\"update_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:13:\"restore_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:17:\"restore_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:15:\"replicate_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:13:\"reorder_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:12:\"delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:16:\"delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:18:\"force_delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:22:\"force_delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:13:\"view_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:17:\"view_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:15:\"create_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:15:\"update_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:16:\"restore_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:20:\"restore_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:18:\"replicate_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:16:\"reorder_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:15:\"delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:19:\"delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:21:\"force_delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:25:\"force_delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:14:\"view_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:18:\"view_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:16:\"create_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:16:\"update_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:17:\"restore_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:21:\"restore_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:19:\"replicate_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:17:\"reorder_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:16:\"delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:20:\"delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:22:\"force_delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:26:\"force_delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:12:\"view_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:16:\"view_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:14:\"create_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:14:\"update_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:46;a:4:{s:1:\"a\";i:47;s:1:\"b\";s:15:\"restore_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:47;a:4:{s:1:\"a\";i:48;s:1:\"b\";s:19:\"restore_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:48;a:4:{s:1:\"a\";i:49;s:1:\"b\";s:17:\"replicate_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:49;a:4:{s:1:\"a\";i:50;s:1:\"b\";s:15:\"reorder_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:50;a:4:{s:1:\"a\";i:51;s:1:\"b\";s:14:\"delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:51;a:4:{s:1:\"a\";i:52;s:1:\"b\";s:18:\"delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:52;a:4:{s:1:\"a\";i:53;s:1:\"b\";s:20:\"force_delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:53;a:4:{s:1:\"a\";i:54;s:1:\"b\";s:24:\"force_delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:54;a:4:{s:1:\"a\";i:55;s:1:\"b\";s:19:\"view_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:55;a:4:{s:1:\"a\";i:56;s:1:\"b\";s:23:\"view_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:56;a:4:{s:1:\"a\";i:57;s:1:\"b\";s:21:\"create_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:57;a:4:{s:1:\"a\";i:58;s:1:\"b\";s:21:\"update_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:58;a:4:{s:1:\"a\";i:59;s:1:\"b\";s:22:\"restore_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:59;a:4:{s:1:\"a\";i:60;s:1:\"b\";s:26:\"restore_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:60;a:4:{s:1:\"a\";i:61;s:1:\"b\";s:24:\"replicate_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:61;a:4:{s:1:\"a\";i:62;s:1:\"b\";s:22:\"reorder_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:62;a:4:{s:1:\"a\";i:63;s:1:\"b\";s:21:\"delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:63;a:4:{s:1:\"a\";i:64;s:1:\"b\";s:25:\"delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:64;a:4:{s:1:\"a\";i:65;s:1:\"b\";s:27:\"force_delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:65;a:4:{s:1:\"a\";i:66;s:1:\"b\";s:31:\"force_delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:66;a:4:{s:1:\"a\";i:67;s:1:\"b\";s:24:\"view_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:67;a:4:{s:1:\"a\";i:68;s:1:\"b\";s:28:\"view_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:68;a:4:{s:1:\"a\";i:69;s:1:\"b\";s:26:\"create_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:69;a:4:{s:1:\"a\";i:70;s:1:\"b\";s:26:\"update_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:70;a:4:{s:1:\"a\";i:71;s:1:\"b\";s:27:\"restore_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:71;a:4:{s:1:\"a\";i:72;s:1:\"b\";s:31:\"restore_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:72;a:4:{s:1:\"a\";i:73;s:1:\"b\";s:29:\"replicate_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:73;a:4:{s:1:\"a\";i:74;s:1:\"b\";s:27:\"reorder_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:74;a:4:{s:1:\"a\";i:75;s:1:\"b\";s:26:\"delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:75;a:4:{s:1:\"a\";i:76;s:1:\"b\";s:30:\"delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:76;a:4:{s:1:\"a\";i:77;s:1:\"b\";s:32:\"force_delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:77;a:4:{s:1:\"a\";i:78;s:1:\"b\";s:36:\"force_delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:78;a:4:{s:1:\"a\";i:79;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:79;a:4:{s:1:\"a\";i:80;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:80;a:4:{s:1:\"a\";i:81;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:81;a:4:{s:1:\"a\";i:82;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:82;a:4:{s:1:\"a\";i:83;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:83;a:4:{s:1:\"a\";i:84;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:84;a:4:{s:1:\"a\";i:85;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:85;a:4:{s:1:\"a\";i:86;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:86;a:4:{s:1:\"a\";i:87;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:87;a:4:{s:1:\"a\";i:88;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:88;a:4:{s:1:\"a\";i:89;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:89;a:4:{s:1:\"a\";i:90;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:90;a:4:{s:1:\"a\";i:91;s:1:\"b\";s:23:\"page_MahasiswaDashboard\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:91;a:4:{s:1:\"a\";i:92;s:1:\"b\";s:31:\"widget_PendaftaranTerbaruWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:92;a:4:{s:1:\"a\";i:93;s:1:\"b\";s:26:\"widget_StatsOverviewWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:93;a:4:{s:1:\"a\";i:94;s:1:\"b\";s:26:\"widget_RiwayatSidangWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:4:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}i:1;a:3:{s:1:\"a\";i:4;s:1:\"b\";s:5:\"admin\";s:1:\"c\";s:3:\"web\";}i:2;a:3:{s:1:\"a\";i:2;s:1:\"b\";s:5:\"dosen\";s:1:\"c\";s:3:\"web\";}i:3;a:3:{s:1:\"a\";i:3;s:1:\"b\";s:9:\"mahasiswa\";s:1:\"c\";s:3:\"web\";}}}', 1758697482);
+('laravel-cache-spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:129:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:10:\"view_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:14:\"view_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:12:\"create_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:12:\"update_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:13:\"restore_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:17:\"restore_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:15:\"replicate_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:13:\"reorder_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:12:\"delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:16:\"delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:18:\"force_delete_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:22:\"force_delete_any_dosen\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:13:\"view_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:17:\"view_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:15:\"create_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:15:\"update_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:16:\"restore_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:20:\"restore_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:18:\"replicate_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:16:\"reorder_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:15:\"delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:19:\"delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:21:\"force_delete_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:25:\"force_delete_any_fakultas\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:14:\"view_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:18:\"view_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:16:\"create_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:16:\"update_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:17:\"restore_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:21:\"restore_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:19:\"replicate_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:17:\"reorder_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:16:\"delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:20:\"delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:22:\"force_delete_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:26:\"force_delete_any_mahasiswa\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:12:\"view_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:16:\"view_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:14:\"create_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:14:\"update_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:46;a:4:{s:1:\"a\";i:47;s:1:\"b\";s:15:\"restore_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:47;a:4:{s:1:\"a\";i:48;s:1:\"b\";s:19:\"restore_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:48;a:4:{s:1:\"a\";i:49;s:1:\"b\";s:17:\"replicate_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:49;a:4:{s:1:\"a\";i:50;s:1:\"b\";s:15:\"reorder_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:50;a:4:{s:1:\"a\";i:51;s:1:\"b\";s:14:\"delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:51;a:4:{s:1:\"a\";i:52;s:1:\"b\";s:18:\"delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:52;a:4:{s:1:\"a\";i:53;s:1:\"b\";s:20:\"force_delete_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:53;a:4:{s:1:\"a\";i:54;s:1:\"b\";s:24:\"force_delete_any_ruangan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:54;a:4:{s:1:\"a\";i:55;s:1:\"b\";s:19:\"view_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:55;a:4:{s:1:\"a\";i:56;s:1:\"b\";s:23:\"view_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:2;i:2;i:4;}}i:56;a:4:{s:1:\"a\";i:57;s:1:\"b\";s:21:\"create_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:57;a:4:{s:1:\"a\";i:58;s:1:\"b\";s:21:\"update_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:58;a:4:{s:1:\"a\";i:59;s:1:\"b\";s:22:\"restore_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:59;a:4:{s:1:\"a\";i:60;s:1:\"b\";s:26:\"restore_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:60;a:4:{s:1:\"a\";i:61;s:1:\"b\";s:24:\"replicate_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:61;a:4:{s:1:\"a\";i:62;s:1:\"b\";s:22:\"reorder_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:62;a:4:{s:1:\"a\";i:63;s:1:\"b\";s:21:\"delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:63;a:4:{s:1:\"a\";i:64;s:1:\"b\";s:25:\"delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:64;a:4:{s:1:\"a\";i:65;s:1:\"b\";s:27:\"force_delete_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:65;a:4:{s:1:\"a\";i:66;s:1:\"b\";s:31:\"force_delete_any_jadwal::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:66;a:4:{s:1:\"a\";i:67;s:1:\"b\";s:24:\"view_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:67;a:4:{s:1:\"a\";i:68;s:1:\"b\";s:28:\"view_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:68;a:4:{s:1:\"a\";i:69;s:1:\"b\";s:26:\"create_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:3:{i:0;i:1;i:1;i:3;i:2;i:4;}}i:69;a:4:{s:1:\"a\";i:70;s:1:\"b\";s:26:\"update_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:70;a:4:{s:1:\"a\";i:71;s:1:\"b\";s:27:\"restore_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:71;a:4:{s:1:\"a\";i:72;s:1:\"b\";s:31:\"restore_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:72;a:4:{s:1:\"a\";i:73;s:1:\"b\";s:29:\"replicate_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:73;a:4:{s:1:\"a\";i:74;s:1:\"b\";s:27:\"reorder_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:74;a:4:{s:1:\"a\";i:75;s:1:\"b\";s:26:\"delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:75;a:4:{s:1:\"a\";i:76;s:1:\"b\";s:30:\"delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:76;a:4:{s:1:\"a\";i:77;s:1:\"b\";s:32:\"force_delete_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:77;a:4:{s:1:\"a\";i:78;s:1:\"b\";s:36:\"force_delete_any_pendaftaran::sidang\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:4;}}i:78;a:4:{s:1:\"a\";i:79;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:79;a:4:{s:1:\"a\";i:80;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:80;a:4:{s:1:\"a\";i:81;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:81;a:4:{s:1:\"a\";i:82;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:82;a:4:{s:1:\"a\";i:83;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:83;a:4:{s:1:\"a\";i:84;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:84;a:4:{s:1:\"a\";i:85;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:85;a:4:{s:1:\"a\";i:86;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:86;a:4:{s:1:\"a\";i:87;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:87;a:4:{s:1:\"a\";i:88;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:88;a:4:{s:1:\"a\";i:89;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:89;a:4:{s:1:\"a\";i:90;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:90;a:4:{s:1:\"a\";i:91;s:1:\"b\";s:23:\"page_MahasiswaDashboard\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:91;a:3:{s:1:\"a\";i:92;s:1:\"b\";s:31:\"widget_PendaftaranTerbaruWidget\";s:1:\"c\";s:3:\"web\";}i:92;a:4:{s:1:\"a\";i:93;s:1:\"b\";s:26:\"widget_StatsOverviewWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:93;a:4:{s:1:\"a\";i:94;s:1:\"b\";s:26:\"widget_RiwayatSidangWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:94;a:4:{s:1:\"a\";i:95;s:1:\"b\";s:14:\"view_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:95;a:4:{s:1:\"a\";i:96;s:1:\"b\";s:18:\"view_any_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:96;a:4:{s:1:\"a\";i:97;s:1:\"b\";s:16:\"create_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:97;a:4:{s:1:\"a\";i:98;s:1:\"b\";s:16:\"update_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:98;a:4:{s:1:\"a\";i:99;s:1:\"b\";s:17:\"restore_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:99;a:4:{s:1:\"a\";i:100;s:1:\"b\";s:21:\"restore_any_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:100;a:4:{s:1:\"a\";i:101;s:1:\"b\";s:19:\"replicate_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:101;a:4:{s:1:\"a\";i:102;s:1:\"b\";s:17:\"reorder_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:102;a:4:{s:1:\"a\";i:103;s:1:\"b\";s:16:\"delete_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:103;a:4:{s:1:\"a\";i:104;s:1:\"b\";s:20:\"delete_any_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:104;a:4:{s:1:\"a\";i:105;s:1:\"b\";s:22:\"force_delete_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:105;a:4:{s:1:\"a\";i:106;s:1:\"b\";s:26:\"force_delete_any_bimbingan\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:106;a:3:{s:1:\"a\";i:107;s:1:\"b\";s:16:\"page_PortalDosen\";s:1:\"c\";s:3:\"web\";}i:107;a:4:{s:1:\"a\";i:108;s:1:\"b\";s:28:\"widget_PerluVerifikasiWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:108;a:4:{s:1:\"a\";i:109;s:1:\"b\";s:28:\"widget_SiapDijadwalkanWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:109;a:4:{s:1:\"a\";i:110;s:1:\"b\";s:24:\"widget_JadwalDosenWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:110;a:4:{s:1:\"a\";i:111;s:1:\"b\";s:31:\"widget_MahasiswaBimbinganWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:111;a:4:{s:1:\"a\";i:112;s:1:\"b\";s:17:\"view_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:112;a:4:{s:1:\"a\";i:113;s:1:\"b\";s:21:\"view_any_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:113;a:4:{s:1:\"a\";i:114;s:1:\"b\";s:19:\"create_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:114;a:4:{s:1:\"a\";i:115;s:1:\"b\";s:19:\"update_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:115;a:4:{s:1:\"a\";i:116;s:1:\"b\";s:20:\"restore_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:116;a:4:{s:1:\"a\";i:117;s:1:\"b\";s:24:\"restore_any_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:117;a:4:{s:1:\"a\";i:118;s:1:\"b\";s:22:\"replicate_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:118;a:4:{s:1:\"a\";i:119;s:1:\"b\";s:20:\"reorder_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:119;a:4:{s:1:\"a\";i:120;s:1:\"b\";s:19:\"delete_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:120;a:4:{s:1:\"a\";i:121;s:1:\"b\";s:23:\"delete_any_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:121;a:4:{s:1:\"a\";i:122;s:1:\"b\";s:25:\"force_delete_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:122;a:4:{s:1:\"a\";i:123;s:1:\"b\";s:29:\"force_delete_any_jadwal::saya\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:123;a:4:{s:1:\"a\";i:124;s:1:\"b\";s:20:\"view_manajemen::role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:124;a:4:{s:1:\"a\";i:125;s:1:\"b\";s:24:\"view_any_manajemen::role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:125;a:4:{s:1:\"a\";i:126;s:1:\"b\";s:22:\"create_manajemen::role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:126;a:4:{s:1:\"a\";i:127;s:1:\"b\";s:22:\"update_manajemen::role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:127;a:4:{s:1:\"a\";i:128;s:1:\"b\";s:22:\"delete_manajemen::role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:128;a:4:{s:1:\"a\";i:129;s:1:\"b\";s:26:\"delete_any_manajemen::role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:4:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}i:1;a:3:{s:1:\"a\";i:4;s:1:\"b\";s:5:\"admin\";s:1:\"c\";s:3:\"web\";}i:2;a:3:{s:1:\"a\";i:2;s:1:\"b\";s:5:\"dosen\";s:1:\"c\";s:3:\"web\";}i:3;a:3:{s:1:\"a\";i:3;s:1:\"b\";s:9:\"mahasiswa\";s:1:\"c\";s:3:\"web\";}}}', 1758787142);
 
 -- --------------------------------------------------------
 
@@ -177,7 +167,8 @@ INSERT INTO `jadwal_sidangs` (`id`, `pendaftaran_sidang_id`, `ruangan_id`, `tang
 (1, 1, 1, '2025-09-01', '11:17:08', '13:19:13', 10, 8, '2025-09-18 07:17:34', '2025-09-18 07:17:34'),
 (2, 3, 1, '2025-09-03', '08:49:55', '09:51:02', 4, 3, '2025-09-19 03:49:18', '2025-09-19 03:49:18'),
 (3, 4, 1, '2025-09-01', '10:01:52', '11:05:02', 3, 4, '2025-09-19 04:02:11', '2025-09-19 04:02:11'),
-(4, 5, 2, '2025-09-30', '08:04:05', '09:04:08', 3, 5, '2025-09-19 04:04:15', '2025-09-19 04:04:15');
+(4, 5, 2, '2025-09-30', '08:04:05', '09:04:08', 3, 5, '2025-09-19 04:04:15', '2025-09-19 04:04:15'),
+(5, 6, 4, '2025-08-12', '15:05:41', '16:05:46', 28, 9, '2025-09-23 23:05:53', '2025-09-23 23:05:53');
 
 -- --------------------------------------------------------
 
@@ -308,7 +299,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2025_09_18_124419_create_mahasiswas_table', 6),
 (9, '2025_09_18_124441_create_ruangans_table', 7),
 (10, '2025_09_18_124502_create_pendaftaran_sidangs_table', 8),
-(11, '2025_09_18_124518_create_jadwal_sidangs_table', 9);
+(11, '2025_09_18_124518_create_jadwal_sidangs_table', 9),
+(12, '2025_09_24_073310_add_avatar_url_to_users_table', 10),
+(13, '2025_09_24_075549_add_avatar_url_to_users_table', 11);
 
 -- --------------------------------------------------------
 
@@ -466,7 +459,8 @@ INSERT INTO `pendaftaran_sidang` (`id`, `mahasiswa_id`, `fakultas_id`, `jenis_si
 (2, 1, 2, 'seminar_hasil', 'Uji Coba Sistem Penjadwalan', 'public/berkas_sidang/6Eep8JHDjnyRFlG2likF5o7TmmKErb3jcDh3durH.pdf', NULL, 'diajukan', NULL, '2025-09-18 07:48:45', '2025-09-18 07:48:45'),
 (3, 4, 1, 'seminar_proposal', 'Analisa Sistem Jadwalin', 'documents/skripsi/01K5GWJJ3ZFSV1D8CTD5R3Q7MH.pdf', NULL, 'selesai', NULL, '2025-09-19 03:43:25', '2025-09-19 04:00:46'),
 (4, 4, 1, 'seminar_hasil', 'Analisa Sistem Jadwalin', 'documents/skripsi/01K5T73R3T5BTYGTY6XG0E62N4.pdf', NULL, 'selesai', 'Bodo Kau', '2025-09-19 04:01:10', '2025-09-22 18:40:44'),
-(5, 4, 1, 'munaqasah', 'Analisa', 'documents/skripsi/01K5GXQG0KE7JYWCRMB32F1JRD.pdf', NULL, 'selesai', NULL, '2025-09-19 04:03:35', '2025-09-19 04:05:06');
+(5, 4, 1, 'munaqasah', 'Analisa', 'documents/skripsi/01K5GXQG0KE7JYWCRMB32F1JRD.pdf', NULL, 'selesai', NULL, '2025-09-19 04:03:35', '2025-09-19 04:05:06'),
+(6, 3, 2, 'seminar_proposal', 'Analisa Kenapa Dia', 'documents/skripsi/01K5X8M8JXW8G046F07Q6WJGE0.pdf', NULL, 'dijadwalkan', 'Maju', '2025-09-23 23:04:57', '2025-09-23 23:13:20');
 
 -- --------------------------------------------------------
 
@@ -580,7 +574,42 @@ INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at
 (91, 'page_MahasiswaDashboard', 'web', '2025-09-19 03:09:06', '2025-09-19 03:09:06'),
 (92, 'widget_PendaftaranTerbaruWidget', 'web', '2025-09-22 22:55:56', '2025-09-22 22:55:56'),
 (93, 'widget_StatsOverviewWidget', 'web', '2025-09-22 23:01:35', '2025-09-22 23:01:35'),
-(94, 'widget_RiwayatSidangWidget', 'web', '2025-09-22 23:01:35', '2025-09-22 23:01:35');
+(94, 'widget_RiwayatSidangWidget', 'web', '2025-09-22 23:01:35', '2025-09-22 23:01:35'),
+(95, 'view_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(96, 'view_any_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(97, 'create_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(98, 'update_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(99, 'restore_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(100, 'restore_any_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(101, 'replicate_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(102, 'reorder_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(103, 'delete_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(104, 'delete_any_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(105, 'force_delete_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(106, 'force_delete_any_bimbingan', 'web', '2025-09-23 21:23:50', '2025-09-23 21:23:50'),
+(107, 'page_PortalDosen', 'web', '2025-09-23 21:23:51', '2025-09-23 21:23:51'),
+(108, 'widget_PerluVerifikasiWidget', 'web', '2025-09-23 21:23:51', '2025-09-23 21:23:51'),
+(109, 'widget_SiapDijadwalkanWidget', 'web', '2025-09-23 21:23:51', '2025-09-23 21:23:51'),
+(110, 'widget_JadwalDosenWidget', 'web', '2025-09-23 21:23:51', '2025-09-23 21:23:51'),
+(111, 'widget_MahasiswaBimbinganWidget', 'web', '2025-09-23 21:23:51', '2025-09-23 21:23:51'),
+(112, 'view_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(113, 'view_any_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(114, 'create_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(115, 'update_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(116, 'restore_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(117, 'restore_any_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(118, 'replicate_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(119, 'reorder_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(120, 'delete_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(121, 'delete_any_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(122, 'force_delete_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(123, 'force_delete_any_jadwal::saya', 'web', '2025-09-23 22:04:21', '2025-09-23 22:04:21'),
+(124, 'view_manajemen::role', 'web', '2025-09-23 22:58:59', '2025-09-23 22:58:59'),
+(125, 'view_any_manajemen::role', 'web', '2025-09-23 22:58:59', '2025-09-23 22:58:59'),
+(126, 'create_manajemen::role', 'web', '2025-09-23 22:58:59', '2025-09-23 22:58:59'),
+(127, 'update_manajemen::role', 'web', '2025-09-23 22:58:59', '2025-09-23 22:58:59'),
+(128, 'delete_manajemen::role', 'web', '2025-09-23 22:58:59', '2025-09-23 22:58:59'),
+(129, 'delete_any_manajemen::role', 'web', '2025-09-23 22:58:59', '2025-09-23 22:58:59');
 
 -- --------------------------------------------------------
 
@@ -713,13 +742,46 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (89, 1),
 (90, 1),
 (91, 1),
-(92, 1),
 (93, 1),
 (94, 1),
-(19, 2),
-(20, 2),
-(44, 2),
-(93, 2),
+(95, 1),
+(96, 1),
+(97, 1),
+(98, 1),
+(99, 1),
+(100, 1),
+(101, 1),
+(102, 1),
+(103, 1),
+(104, 1),
+(105, 1),
+(106, 1),
+(108, 1),
+(109, 1),
+(110, 1),
+(111, 1),
+(112, 1),
+(113, 1),
+(114, 1),
+(115, 1),
+(116, 1),
+(117, 1),
+(118, 1),
+(119, 1),
+(120, 1),
+(121, 1),
+(122, 1),
+(123, 1),
+(124, 1),
+(125, 1),
+(126, 1),
+(127, 1),
+(128, 1),
+(129, 1),
+(31, 2),
+(32, 2),
+(55, 2),
+(56, 2),
 (67, 3),
 (68, 3),
 (69, 3),
@@ -846,7 +908,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('Q4P2BJcMnwnq0twZQGuv6in1tBzmaFTKq3I0P8V9', 43, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiOURIY1UxY25LbUVGM0NNSUVSREl2WjdXUG9ocDBQQTBGbU8yb09NYiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjQzO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkcklJdm1uZUdRODlsQWpqNk1ULkZlT2ZNd2Z3MkIuelF1Tkl2SGpTdWplS1QwVEJ4NGVoT2UiO30=', 1758613488);
+('6gKKf23C8pNwH9NQ2qiGwUl1l4AbLY3Ex5OPkbu9', NULL, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMU9BVXo3R3FGY0tidUVDQXFOU01LMDFmWE9HYW1ycmxvb3Z6R0d2TiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9kb3Nlbi9sb2dpbiI7fX0=', 1758700511),
+('gKNPtwFz5EHgybQIbTFtpO3uWOsI3pwrcdYm4gsX', NULL, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVTFZaTRvOEVBQ2VxWVRSZlo2Skp0YjNHWE5oVWd0T1ZmWDhqZERYMSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9sb2dpbiI7fX0=', 1758700745);
 
 -- --------------------------------------------------------
 
@@ -864,88 +927,89 @@ CREATE TABLE `users` (
   `remember_token` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `fakultas_id` bigint UNSIGNED DEFAULT NULL
+  `fakultas_id` bigint UNSIGNED DEFAULT NULL,
+  `avatar_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`, `fakultas_id`) VALUES
-(1, 'Super Admin', 'superadmin@uinsi.ac.id', NULL, '$2y$12$PdnMx8MNAfz9mrJAiNB7O.bzpdazfoA9u/dEK2ry1y0bgvBQK1MKm', 'superadmin', NULL, '2025-09-18 04:25:07', '2025-09-18 04:25:07', NULL),
-(2, 'Test User', 'test@example.com', '2025-09-18 05:06:06', '$2y$12$KJ0DQ7hq4yvuIHoBtFm1Tu2SSxJUa1LExW/d6DqptF9257iTTba1m', 'superadmin', 'WIB1D0MmmMg6TvK8VwyWJD1TE3G0YiaosHbmL8T69lIgM0A8X9m3hMFK4MqX', '2025-09-18 05:06:07', '2025-09-18 15:55:17', 4),
-(4, 'Dosen Penguji', 'dosen.test@uinsi.ac.id', NULL, '$2y$12$rytWvPWYFU6kJzxbEYnqHOCDYbe/JAVRtEV/hIwiNCG2DOw5xq5QK', 'dosen', NULL, '2025-09-18 05:39:12', '2025-09-18 05:39:12', NULL),
-(6, 'Yayas Clevara', 'yayasclevara@gmail.com', NULL, '$2y$12$RcVrm2H0C74SwlFTVJ77WegnAhl9nh4LIGFhJ7IH.KHaza11A3ER.', 'dosen', NULL, '2025-09-18 06:06:04', '2025-09-18 06:06:04', NULL),
-(7, 'Amanda Corkery I', 'tswift@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'gR7bC4ZXxK', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(8, 'Lauren Raynor DVM', 'florida.swaniawski@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'XJJNtFG2nY', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(9, 'Prof. Carleton Kirlin PhD', 'jayda12@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'HyHvflIA9X', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(10, 'Kayla Hagenes', 'dayne84@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'uQsiJDRawv', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(11, 'Mrs. Neva Wolff', 'gstehr@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'XnoVc3Of2Q', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(12, 'Hanna Smith PhD', 'jast.alyson@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'xjYefX2VPO', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(13, 'Bradly Spencer', 'shields.verner@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'YXd5o1L4Vj', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(14, 'Ms. Brionna Jacobson V', 'shayes@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'Om8XnFsi5y', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(15, 'Prof. Alessandra Murphy', 'pschmitt@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'pM94jylH42', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(16, 'Mr. Jamison Walker I', 'ldonnelly@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'GC6ERnyCkA', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(17, 'Nat Runte', 'shaag@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'imRvlP8qgq', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(18, 'Therese Bahringer', 'marquardt.kaylie@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', '1QOSynAYlI', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(19, 'Alfred King', 'daisha.green@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'L0IBajfVww', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(20, 'Bria Romaguera', 'meta35@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'Q1kY2nI3Hz', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(21, 'Rae Kassulke', 'funk.jaquelin@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'BG7wTc62rV', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(22, 'Osborne Parisian III', 'kavon18@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'gJNzItSmj2', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(23, 'Abigail Keebler', 'hilpert.frederic@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'wKZycvdXsV', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(24, 'Sheldon Ratke', 'julio57@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', '6CjLdsAiW8', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(25, 'Bill Rippin', 'sylvan.terry@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'RGgBo2WrnN', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(26, 'Sonia Oberbrunner', 'funk.kory@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'nA2EVrtlfq', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL),
-(27, 'Rizqi Saputra', 'rizqi@uinsi.ac.id', NULL, '$2y$12$ZeHcnve1.mrzb8VqsjHAZ.9zIpaKFJQhT55NqA8z9SHLmuRCliEBu', 'mahasiswa', NULL, '2025-09-18 06:28:48', '2025-09-18 06:28:48', NULL),
-(28, 'Admin FTIK', 'admin.ftik@uinsi.ac.id', NULL, '$2y$12$LtKQw6FotR3kbi24VkECkuBkwsiLqX/ERHxVD1tUs5aPk1qGzJDke', 'admin', NULL, '2025-09-18 07:57:52', '2025-09-18 08:15:45', 1),
-(32, 'Wahyu Diansyah', 'wahyu@uinsi.ac.id', NULL, '$2y$12$slzBb531z2snqmzFn5YdYe.toOz9KYKpcRn1ifaoTiBswyDs3E9hu', 'dosen', NULL, '2025-09-18 08:48:57', '2025-09-18 08:48:57', 1),
-(38, 'Muhammad Haidar', 'haidar@uinsi.ac.id', NULL, '$2y$12$tpFPiJg74n4otVw5JZ9YReVlxQNRMlIVYCTfhXqYkeZU9NBhvBCvO', 'dosen', NULL, '2025-09-18 09:11:35', '2025-09-18 09:11:35', NULL),
-(40, 'Admin FEBI', 'adminfebi@uinsi.ac.id', NULL, '$2y$12$3uNpTyFu1RKdKywi6t505.jxYwPFpnxXpeX9hSLuZfCh7T5rq1OIC', 'admin', NULL, '2025-09-18 19:32:15', '2025-09-18 19:32:15', 4),
-(43, 'Admin FUAD', 'adminfuad@uinsi.ac.id', NULL, '$2y$12$rIIvmneGQ89lAjj6MT.FeOfMwfw2B.zQuNIvHjSujeKT0TBx4ehOe', 'admin', NULL, '2025-09-18 19:53:44', '2025-09-19 08:37:44', 2),
-(45, 'Amru', 'amru@uinsi.ac.id', NULL, '$2y$12$LJd3NLeLSO.Fw5hVmEumauScYkXJa2JrjO6bFpCsnKzt8B9pgywdG', 'dosen', NULL, '2025-09-18 20:00:58', '2025-09-18 20:00:58', 2),
-(47, 'Amru Hasan', 'amru12@uinsi.ac.id', NULL, '$2y$12$5pVgo8asXuw1/IhoAxEKTuy0X70cW8E4CBvIqWmzGeM5V7B9pARV6', 'mahasiswa', NULL, '2025-09-18 20:07:35', '2025-09-18 20:07:35', 2),
-(48, 'Admin FASYA', 'adminfasya@uinsi.ac.id', NULL, '$2y$12$qj6ApV8FhyKSafIfQpI3N.WZ/A62zle2Blh9/I4rXBWUyRfxTLe5m', 'superadmin', NULL, '2025-09-18 22:26:27', '2025-09-18 22:26:27', 3),
-(49, 'Budi Santoso', 'budi.santoso@uinsi.ac.id', NULL, '$2y$12$fcHO.Y2QDcz5unsxESpe1u4hk7.UIOHrXsHE0U9wVM89cfllLyHqi', 'mahasiswa', NULL, '2025-09-19 03:24:30', '2025-09-19 03:24:30', 1),
-(50, 'Milan Schaefer', 'celine19@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '4CouEQfJKl', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(51, 'Logan Hamill', 'kavon57@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Sxr0f4BjL8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(52, 'Nelle Wolff', 'elowe@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Fj6MzcUq0e', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(53, 'Travon Denesik', 'tschuster@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'hINzWoxnuu', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(54, 'Amie Weissnat', 'bmcglynn@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Y4cacsZxw4', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(55, 'Bernice Hoeger', 'tevin23@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'owcv6D2GmX', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(56, 'Marcelino Keeling IV', 'rusty10@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'IwwScR2WZ8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(57, 'Dr. Tara Goodwin', 'mohammad08@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 's2aQ24Yg2S', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(58, 'Sim Murray', 'sroob@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '820vrvyjMn', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(59, 'Osvaldo Keeling', 'barrows.savanna@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '7r8G7GdEWL', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1),
-(60, 'Prof. Linwood Mayert', 'kklocko@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Deaokw4MDg', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(61, 'Mr. Liam Weber III', 'aboehm@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '6FMmmmAZFQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(62, 'Ozella Kuhlman V', 'destany29@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'KCcL5YVjlm', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(63, 'Rex Predovic', 'greenholt.liliana@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'wDjNtZMUSS', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(64, 'Oral Swift', 'lucius.okuneva@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'an1dOnw56K', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(65, 'Mittie Bauch', 'wisozk.ethyl@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '9fN4mUTWq8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(66, 'Mr. Ariel Russel V', 'dietrich.ettie@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'qHpKZhsqIz', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(67, 'Renee Deckow', 'maximillian50@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'nBnyiGd4AW', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(68, 'Mrs. Kariane O\'Keefe MD', 'ullrich.christophe@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'jau6P0HwTU', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(69, 'Sally Von', 'dgislason@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'XjmCGPDFK0', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2),
-(70, 'Karley Luettgen PhD', 'mccullough.aaron@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'mMBWmab47I', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(71, 'Nicolas Sawayn', 'gsimonis@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'gRYbOxi3sQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(72, 'Eddie Mayer DVM', 'marty94@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'DllTPD1bLs', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(73, 'Janis Fisher', 'trutherford@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '0Eyhzbyobh', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(74, 'Hubert Reinger', 'elta14@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '8XPNNZdznJ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(75, 'Mr. Fletcher Cremin', 'keeling.dayna@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'DXWZdACstH', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(76, 'Darryl Gaylord Sr.', 'dayne.price@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'OwaPUpqmqW', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(77, 'Domenico Pollich', 'chaim18@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'iXr0Slx9XD', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(78, 'Gianni Spencer', 'ayden48@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'xqfjLYaNE8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(79, 'Ms. Itzel Wiegand', 'runte.hulda@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'gFyXohaWkE', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3),
-(80, 'Misty Ferry', 'earmstrong@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'JLPNJpxGOr', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(81, 'Zachery Jenkins I', 'emmanuelle.schmidt@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'r5H49SyByu', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(82, 'Miss Kaitlyn Donnelly', 'flavie.hilpert@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'tH2XCcPipQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(83, 'Mrs. Aleen Hirthe DVM', 'rippin.anderson@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'htRnuJemB7', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(84, 'Dr. Deion McKenzie V', 'uvonrueden@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'KdcCKnyctb', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(85, 'Myron Swift', 'ernie48@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'JHAkiHIby4', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(86, 'Prof. Zachary Bartoletti Jr.', 'qdicki@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'baHODcqezk', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(87, 'Prof. Ellis Quitzon II', 'leopoldo10@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '1CWbx67zDq', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(88, 'Miss Patricia Waters PhD', 'zboncak.crystal@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'tEXUbGfXV7', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4),
-(89, 'Clark Runolfsson', 'clemmie.davis@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Eoj5Dj28aZ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4);
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`, `fakultas_id`, `avatar_url`) VALUES
+(1, 'Super Admin', 'superadmin@uinsi.ac.id', NULL, '$2y$12$PdnMx8MNAfz9mrJAiNB7O.bzpdazfoA9u/dEK2ry1y0bgvBQK1MKm', 'superadmin', NULL, '2025-09-18 04:25:07', '2025-09-23 23:57:52', NULL, 'avatars/01K5XBN57BVNAHQ5F36HMCM09P.png'),
+(2, 'Test User', 'test@example.com', '2025-09-18 05:06:06', '$2y$12$KJ0DQ7hq4yvuIHoBtFm1Tu2SSxJUa1LExW/d6DqptF9257iTTba1m', 'superadmin', 'WIB1D0MmmMg6TvK8VwyWJD1TE3G0YiaosHbmL8T69lIgM0A8X9m3hMFK4MqX', '2025-09-18 05:06:07', '2025-09-18 15:55:17', 4, NULL),
+(4, 'Dosen Penguji', 'dosen.test@uinsi.ac.id', NULL, '$2y$12$rytWvPWYFU6kJzxbEYnqHOCDYbe/JAVRtEV/hIwiNCG2DOw5xq5QK', 'dosen', NULL, '2025-09-18 05:39:12', '2025-09-18 05:39:12', NULL, NULL),
+(6, 'Yayas Clevara', 'yayasclevara@gmail.com', NULL, '$2y$12$RcVrm2H0C74SwlFTVJ77WegnAhl9nh4LIGFhJ7IH.KHaza11A3ER.', 'dosen', NULL, '2025-09-18 06:06:04', '2025-09-18 06:06:04', NULL, NULL),
+(7, 'Amanda Corkery I', 'tswift@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'gR7bC4ZXxK', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(8, 'Lauren Raynor DVM', 'florida.swaniawski@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'XJJNtFG2nY', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(9, 'Prof. Carleton Kirlin PhD', 'jayda12@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'HyHvflIA9X', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(10, 'Kayla Hagenes', 'dayne84@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'uQsiJDRawv', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(11, 'Mrs. Neva Wolff', 'gstehr@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'XnoVc3Of2Q', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(12, 'Hanna Smith PhD', 'jast.alyson@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'xjYefX2VPO', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(13, 'Bradly Spencer', 'shields.verner@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'YXd5o1L4Vj', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(14, 'Ms. Brionna Jacobson V', 'shayes@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'Om8XnFsi5y', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(15, 'Prof. Alessandra Murphy', 'pschmitt@example.net', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'pM94jylH42', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(16, 'Mr. Jamison Walker I', 'ldonnelly@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'GC6ERnyCkA', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(17, 'Nat Runte', 'shaag@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'imRvlP8qgq', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(18, 'Therese Bahringer', 'marquardt.kaylie@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', '1QOSynAYlI', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(19, 'Alfred King', 'daisha.green@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'L0IBajfVww', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(20, 'Bria Romaguera', 'meta35@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'Q1kY2nI3Hz', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(21, 'Rae Kassulke', 'funk.jaquelin@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'BG7wTc62rV', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(22, 'Osborne Parisian III', 'kavon18@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'gJNzItSmj2', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(23, 'Abigail Keebler', 'hilpert.frederic@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'wKZycvdXsV', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(24, 'Sheldon Ratke', 'julio57@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', '6CjLdsAiW8', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(25, 'Bill Rippin', 'sylvan.terry@example.org', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'RGgBo2WrnN', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(26, 'Sonia Oberbrunner', 'funk.kory@example.com', '2025-09-18 06:25:04', '$2y$12$uVH3ZObeOzTrOr0e4UXsG.1AyI3SY7J3nyeNzV.KoSfbDpYANpk3i', 'dosen', 'nA2EVrtlfq', '2025-09-18 06:25:04', '2025-09-18 06:25:04', NULL, NULL),
+(27, 'Rizqi Saputra', 'rizqi@uinsi.ac.id', NULL, '$2y$12$ZeHcnve1.mrzb8VqsjHAZ.9zIpaKFJQhT55NqA8z9SHLmuRCliEBu', 'mahasiswa', NULL, '2025-09-18 06:28:48', '2025-09-18 06:28:48', NULL, NULL),
+(28, 'Admin FTIK', 'admin.ftik@uinsi.ac.id', NULL, '$2y$12$LtKQw6FotR3kbi24VkECkuBkwsiLqX/ERHxVD1tUs5aPk1qGzJDke', 'admin', NULL, '2025-09-18 07:57:52', '2025-09-18 08:15:45', 1, NULL),
+(32, 'Wahyu Diansyah', 'wahyu@uinsi.ac.id', NULL, '$2y$12$slzBb531z2snqmzFn5YdYe.toOz9KYKpcRn1ifaoTiBswyDs3E9hu', 'dosen', NULL, '2025-09-18 08:48:57', '2025-09-18 08:48:57', 1, NULL),
+(38, 'Muhammad Haidar', 'haidar@uinsi.ac.id', NULL, '$2y$12$tpFPiJg74n4otVw5JZ9YReVlxQNRMlIVYCTfhXqYkeZU9NBhvBCvO', 'dosen', NULL, '2025-09-18 09:11:35', '2025-09-18 09:11:35', NULL, NULL),
+(40, 'Admin FEBI', 'adminfebi@uinsi.ac.id', NULL, '$2y$12$3uNpTyFu1RKdKywi6t505.jxYwPFpnxXpeX9hSLuZfCh7T5rq1OIC', 'admin', NULL, '2025-09-18 19:32:15', '2025-09-18 19:32:15', 4, NULL),
+(43, 'Admin FUAD', 'adminfuad@uinsi.ac.id', NULL, '$2y$12$rIIvmneGQ89lAjj6MT.FeOfMwfw2B.zQuNIvHjSujeKT0TBx4ehOe', 'admin', NULL, '2025-09-18 19:53:44', '2025-09-19 08:37:44', 2, NULL),
+(45, 'Amru', 'amru@uinsi.ac.id', NULL, '$2y$12$LJd3NLeLSO.Fw5hVmEumauScYkXJa2JrjO6bFpCsnKzt8B9pgywdG', 'dosen', NULL, '2025-09-18 20:00:58', '2025-09-18 20:00:58', 2, NULL),
+(47, 'Amru Hasan', 'amru12@uinsi.ac.id', NULL, '$2y$12$5pVgo8asXuw1/IhoAxEKTuy0X70cW8E4CBvIqWmzGeM5V7B9pARV6', 'mahasiswa', NULL, '2025-09-18 20:07:35', '2025-09-18 20:07:35', 2, NULL),
+(48, 'Admin FASYA', 'adminfasya@uinsi.ac.id', NULL, '$2y$12$qj6ApV8FhyKSafIfQpI3N.WZ/A62zle2Blh9/I4rXBWUyRfxTLe5m', 'superadmin', NULL, '2025-09-18 22:26:27', '2025-09-18 22:26:27', 3, NULL),
+(49, 'Budi Santoso', 'budi.santoso@uinsi.ac.id', NULL, '$2y$12$fcHO.Y2QDcz5unsxESpe1u4hk7.UIOHrXsHE0U9wVM89cfllLyHqi', 'mahasiswa', NULL, '2025-09-19 03:24:30', '2025-09-19 03:24:30', 1, NULL),
+(50, 'Milan Schaefer', 'celine19@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '4CouEQfJKl', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(51, 'Logan Hamill', 'kavon57@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Sxr0f4BjL8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(52, 'Nelle Wolff', 'elowe@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Fj6MzcUq0e', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(53, 'Travon Denesik', 'tschuster@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'hINzWoxnuu', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(54, 'Amie Weissnat', 'bmcglynn@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Y4cacsZxw4', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(55, 'Bernice Hoeger', 'tevin23@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'owcv6D2GmX', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(56, 'Marcelino Keeling IV', 'rusty10@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'IwwScR2WZ8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(57, 'Dr. Tara Goodwin', 'mohammad08@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 's2aQ24Yg2S', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(58, 'Sim Murray', 'sroob@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '820vrvyjMn', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(59, 'Osvaldo Keeling', 'barrows.savanna@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '7r8G7GdEWL', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 1, NULL),
+(60, 'Prof. Linwood Mayert', 'kklocko@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Deaokw4MDg', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(61, 'Mr. Liam Weber III', 'aboehm@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '6FMmmmAZFQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(62, 'Ozella Kuhlman V', 'destany29@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'KCcL5YVjlm', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(63, 'Rex Predovic', 'greenholt.liliana@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'wDjNtZMUSS', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(64, 'Oral Swift', 'lucius.okuneva@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'an1dOnw56K', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(65, 'Mittie Bauch', 'wisozk.ethyl@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '9fN4mUTWq8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(66, 'Mr. Ariel Russel V', 'dietrich.ettie@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'qHpKZhsqIz', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(67, 'Renee Deckow', 'maximillian50@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'nBnyiGd4AW', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(68, 'Mrs. Kariane O\'Keefe MD', 'ullrich.christophe@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'jau6P0HwTU', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(69, 'Sally Von', 'dgislason@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'XjmCGPDFK0', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 2, NULL),
+(70, 'Karley Luettgen PhD', 'mccullough.aaron@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'mMBWmab47I', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(71, 'Nicolas Sawayn', 'gsimonis@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'gRYbOxi3sQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(72, 'Eddie Mayer DVM', 'marty94@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'DllTPD1bLs', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(73, 'Janis Fisher', 'trutherford@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '0Eyhzbyobh', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(74, 'Hubert Reinger', 'elta14@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '8XPNNZdznJ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(75, 'Mr. Fletcher Cremin', 'keeling.dayna@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'DXWZdACstH', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(76, 'Darryl Gaylord Sr.', 'dayne.price@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'OwaPUpqmqW', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(77, 'Domenico Pollich', 'chaim18@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'iXr0Slx9XD', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(78, 'Gianni Spencer', 'ayden48@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'xqfjLYaNE8', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(79, 'Ms. Itzel Wiegand', 'runte.hulda@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'gFyXohaWkE', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 3, NULL),
+(80, 'Misty Ferry', 'earmstrong@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'JLPNJpxGOr', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(81, 'Zachery Jenkins I', 'emmanuelle.schmidt@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'r5H49SyByu', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(82, 'Miss Kaitlyn Donnelly', 'flavie.hilpert@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'tH2XCcPipQ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(83, 'Mrs. Aleen Hirthe DVM', 'rippin.anderson@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'htRnuJemB7', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(84, 'Dr. Deion McKenzie V', 'uvonrueden@example.org', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'KdcCKnyctb', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(85, 'Myron Swift', 'ernie48@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'JHAkiHIby4', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(86, 'Prof. Zachary Bartoletti Jr.', 'qdicki@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'baHODcqezk', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(87, 'Prof. Ellis Quitzon II', 'leopoldo10@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', '1CWbx67zDq', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(88, 'Miss Patricia Waters PhD', 'zboncak.crystal@example.com', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'tEXUbGfXV7', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL),
+(89, 'Clark Runolfsson', 'clemmie.davis@example.net', '2025-09-22 19:15:27', '$2y$12$8tbEvh6PQuG.3tmgrtZnP.HnrAvKd2QTLy9m93H.Ca6EQAble6yPq', 'mahasiswa', 'Eoj5Dj28aZ', '2025-09-22 19:15:27', '2025-09-22 19:15:27', 4, NULL);
 
 --
 -- Indexes for dumped tables
@@ -1125,7 +1189,7 @@ ALTER TABLE `fakultas`
 -- AUTO_INCREMENT untuk tabel `jadwal_sidangs`
 --
 ALTER TABLE `jadwal_sidangs`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `jobs`
@@ -1143,19 +1207,19 @@ ALTER TABLE `mahasiswas`
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `pendaftaran_sidang`
 --
 ALTER TABLE `pendaftaran_sidang`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 
 --
 -- AUTO_INCREMENT untuk tabel `roles`
