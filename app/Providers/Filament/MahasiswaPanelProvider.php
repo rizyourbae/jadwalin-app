@@ -18,6 +18,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Http\Middleware\EnsureUserHasMahasiswaRole;
+use Filament\Support\Enums\MaxWidth;
 use App\Filament\Mahasiswa\Pages\Login;
 
 class MahasiswaPanelProvider extends PanelProvider
@@ -26,11 +27,13 @@ class MahasiswaPanelProvider extends PanelProvider
     {
         return $panel
             ->brandName('Jadwalin')
+            ->sidebarCollapsibleOnDesktop(true)
             ->brandLogo(asset('assets/img/jadwalin.png'))
             ->brandLogoHeight('4.3rem')
             ->favicon(asset('assets/img/apple.png'))
             ->id('mahasiswa')
             ->path('mahasiswa')
+            ->maxContentWidth(MaxWidth::Full)
             ->login(Login::class)
             ->spa()
             ->colors([

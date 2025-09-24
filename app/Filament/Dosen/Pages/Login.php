@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Mahasiswa\Pages;
+namespace App\Filament\Dosen\Pages;
 
 use Filament\Forms\Form;
 use Filament\Pages\Auth\Login as BaseLogin;
@@ -22,8 +22,8 @@ class Login extends BaseLogin
     {
         $credentials = parent::getCredentialsFromFormData($data);
 
-        // Tambahkan syarat WAJIB: role HARUS mahasiswa
-        $credentials['role'] = 'mahasiswa';
+        // Tambahkan syarat WAJIB: role HARUS dosen
+        $credentials['role'] = 'dosen';
 
         return $credentials;
     }

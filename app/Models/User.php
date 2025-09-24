@@ -9,11 +9,13 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Filament\Models\Contracts\HasAvatar;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * @mixin \Spatie\Permission\Traits\HasRoles
  */
-class User extends Authenticatable
+class User extends Authenticatable implements HasAvatar
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable, HasRoles;
@@ -29,6 +31,7 @@ class User extends Authenticatable
         'password',
         'role',
         'fakultas_id',
+        'avatar_url',
     ];
 
     /**
@@ -76,5 +79,14 @@ class User extends Authenticatable
     public function fakultas(): BelongsTo
     {
         return $this->belongsTo(Fakultas::class);
+    }
+
+    /**
+     * TAMBAHKAN INI UNTUK AVATAR FILAMENT
+     */
+    public function getFilamentAvatarUrl(): ?string
+    {
+        $avatarColumn = config('filament-edit-profile.avatar_column', 'avatar_url');
+        return $this->$avatarColumn ? Storage::url($this->$avatarColumn) : null;
     }
 }

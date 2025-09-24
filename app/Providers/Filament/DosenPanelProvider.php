@@ -2,8 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Pages\Login;
-use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -18,34 +16,34 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Http\Middleware\EnsureUserIsDosen;
 use Filament\Support\Enums\MaxWidth;
-use App\Http\Middleware\EnsureUserIsAdmin;
-use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
+use App\Filament\Dosen\Pages\Login;
 
-class AdminPanelProvider extends PanelProvider
+class DosenPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
         return $panel
-            ->default()
+            ->id('dosen')
+            ->path('dosen')
+            ->brandName('Jadwalin')
             ->sidebarCollapsibleOnDesktop(true)
             ->brandLogo(asset('assets/img/jadwalin.png'))
             ->brandLogoHeight('4.3rem')
-            ->brandName('Jadwalin')
-            ->maxContentWidth(MaxWidth::Full)
             ->favicon(asset('assets/img/apple.png'))
-            ->id('admin')
-            ->path('admin')
+            ->spa()
+            ->maxContentWidth(MaxWidth::Full)
             ->login(Login::class)
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Red,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
+            ->discoverResources(in: app_path('Filament/Dosen/Resources'), for: 'App\\Filament\\Dosen\\Resources')
+            ->discoverPages(in: app_path('Filament/Dosen/Pages'), for: 'App\\Filament\\Dosen\\Pages')
             ->pages([
                 Pages\Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
+            ->discoverWidgets(in: app_path('Filament/Dosen/Widgets'), for: 'App\\Filament\\Dosen\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
@@ -61,18 +59,8 @@ class AdminPanelProvider extends PanelProvider
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
-            ->plugins([
-                FilamentShieldPlugin::make(),
-                FilamentEditProfilePlugin::make()
-                    ->setSort(10)
-                    ->shouldShowAvatarForm(
-                        value: true,
-                        directory: 'avatars', // image will be stored in 'storage/app/public/avatars
-                    )
-                    ->setIcon('heroicon-o-user'),
-            ])
             ->authMiddleware([
-                EnsureUserIsAdmin::class,
+                EnsureUserIsDosen::class,
             ]);
     }
 }

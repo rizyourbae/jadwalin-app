@@ -27,10 +27,11 @@ class Login extends BaseLogin
 
         // Tambahkan syarat: role BUKAN mahasiswa
         $credentials['role'] = function ($query) {
-            $query->where('role', '!=', 'mahasiswa');
+            $query
+                ->where('role', '!=', 'mahasiswa')
+                ->where('role', '!=', 'dosen');
         };
 
         return $credentials;
     }
-
 }

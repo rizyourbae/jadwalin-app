@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\JadwalSidangResource\Pages;
+namespace App\Filament\Dosen\Resources\JadwalSayaResource\Pages;
 
-use App\Filament\Resources\JadwalSidangResource;
+use App\Filament\Dosen\Resources\JadwalSayaResource;
 use Filament\Resources\Pages\ViewRecord;
 use Filament\Infolists\Infolist;
 use Filament\Infolists\Components\Section;
@@ -10,9 +10,9 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Components\Grid;
 use Illuminate\Support\Str;
 
-class ViewJadwalSidang extends ViewRecord
+class ViewJadwalSaya extends ViewRecord
 {
-    protected static string $resource = JadwalSidangResource::class;
+    protected static string $resource = JadwalSayaResource::class;
 
     public function infolist(Infolist $infolist): Infolist
     {
