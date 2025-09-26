@@ -4,8 +4,10 @@ namespace App\Filament\Resources\MahasiswaResource\Pages;
 
 use App\Filament\Resources\MahasiswaResource;
 use App\Models\User;
+use App\Models\Mahasiswa;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Model;
 
 class CreateMahasiswa extends CreateRecord
 {
@@ -24,6 +26,12 @@ class CreateMahasiswa extends CreateRecord
         $user->assignRole('mahasiswa'); // Beri role via Spatie
 
         $data['user_id'] = $user->id;
+
+        if (isset($data['pembimbing2_id']) && $data['pembimbing2_id'] === 'lainnya') {
+            $data['pembimbing2_id'] = null;
+        }
+        dd($data);
+
 
         return $data;
     }

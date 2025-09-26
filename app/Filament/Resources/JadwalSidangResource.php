@@ -3,12 +3,12 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\JadwalSidangResource\Pages;
+use App\Models\Dosen;
 use App\Filament\Resources\JadwalSidangResource\RelationManagers;
 use App\Models\{JadwalSidang, PendaftaranSidang, Ruangan};
 use Filament\Forms\Components\{DatePicker, Section, Select, TimePicker};
 use Filament\Forms\{Get, Form};
 use Filament\Resources\Resource;
-use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Tables\Actions\{ActionGroup, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
 use Illuminate\Database\Eloquent\Builder;
@@ -76,10 +76,12 @@ class JadwalSidangResource extends Resource
                             ->options(function (Get $get) {
                                 $pendaftaran = PendaftaranSidang::find($get('pendaftaran_sidang_id'));
                                 if (!$pendaftaran) {
-                                    return [];
+                                    return Dosen::all()->pluck('user.name', 'id');
                                 }
-                                return $pendaftaran->mahasiswa->fakultas->dosens
-                                    ->whereNotIn('id', [$pendaftaran->mahasiswa->pembimbing1_id, $pendaftaran->mahasiswa->pembimbing2_id])
+
+                                // Ambil SEMUA dosen, lalu filter (kecualikan pembimbing)
+                                return Dosen::whereNotIn('id', [$pendaftaran->mahasiswa->pembimbing1_id, $pendaftaran->mahasiswa->pembimbing2_id])
+                                    ->get()
                                     ->pluck('user.name', 'id');
                             })
                             ->searchable()
@@ -89,13 +91,15 @@ class JadwalSidangResource extends Resource
                             ->label('Dosen Penguji 2')
                             ->options(function (Get $get) {
                                 $pendaftaran = PendaftaranSidang::find($get('pendaftaran_sidang_id'));
-                                if (!$pendaftaran) {
-                                    return [];
-                                }
-                                // Ambil juga penguji 1 agar tidak dipilih dua kali
                                 $penguji1 = $get('penguji1_id');
-                                return $pendaftaran->mahasiswa->fakultas->dosens
-                                    ->whereNotIn('id', [$pendaftaran->mahasiswa->pembimbing1_id, $pendaftaran->mahasiswa->pembimbing2_id, $penguji1])
+
+                                if (!$pendaftaran) {
+                                    return Dosen::all()->pluck('user.name', 'id');
+                                }
+
+                                // Ambil SEMUA dosen, lalu filter (kecualikan pembimbing dan penguji 1)
+                                return Dosen::whereNotIn('id', [$pendaftaran->mahasiswa->pembimbing1_id, $pendaftaran->mahasiswa->pembimbing2_id, $penguji1])
+                                    ->get()
                                     ->pluck('user.name', 'id');
                             })
                             ->searchable()->preload()->required(),

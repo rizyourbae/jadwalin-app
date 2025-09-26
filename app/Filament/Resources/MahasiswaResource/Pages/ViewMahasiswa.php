@@ -38,7 +38,13 @@ class ViewMahasiswa extends ViewRecord
                             TextEntry::make('pembimbing1.user.name')
                                 ->label('Dosen Pembimbing 1'),
                             TextEntry::make('pembimbing2.user.name')
-                                ->label('Dosen Pembimbing 2'),
+                                ->label('Dosen Pembimbing 2')
+                                ->visible(fn($record) => filled($record->pembimbing2_id)),
+                            TextEntry::make('pembimbing2_external')
+                                ->label('Dosen Pembimbing 2')
+                                // Tambahkan '(Eksternal)' agar lebih jelas
+                                ->formatStateUsing(fn($state) => $state ? $state . ' (Dosen Eksternal)' : '-')
+                                ->visible(fn($record) => filled($record->pembimbing2_external)),
                         ]),
                         TextEntry::make('judul_skripsi')
                             ->label('Judul Skripsi')

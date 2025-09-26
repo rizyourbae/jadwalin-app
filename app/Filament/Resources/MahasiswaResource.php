@@ -5,8 +5,9 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\MahasiswaResource\Pages;
 use App\Models\Mahasiswa;
 use App\Models\User;
+use App\Models\Dosen;
 use Filament\Forms\Components\{Section, Select, Textarea, TextInput};
-use Filament\Forms\{Form, Get};
+use Filament\Forms\{Form, Get, Set};
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\{ActionGroup, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
 use Filament\Tables\Columns\TextColumn;
@@ -75,17 +76,21 @@ class MahasiswaResource extends Resource
                             ->searchable()
                             ->preload(),
                         Select::make('pembimbing2_id')
-                            ->relationship(
-                                name: 'pembimbing2',
-                                titleAttribute: 'nip',
-                                // Hanya ambil dosen dari fakultas yang dipilih
-                                modifyQueryUsing: fn(Builder $query, Get $get) => $query->where('fakultas_id', $get('fakultas_id'))
+                            ->label('Dosen Pembimbing 2 (Internal)')
+                            ->options(
+                                Dosen::all()->mapWithKeys(function ($dosen) {
+                                    return [$dosen->id => $dosen->user->name . ' (' . $dosen->nip . ')'];
+                                })
                             )
-                            ->getOptionLabelFromRecordUsing(fn($record) => $record->user->name . ' (' . $record->nip . ')')
-                            ->label('Dosen Pembimbing 2')
                             ->searchable()
-                            ->preload(),
-                        Textarea::make('judul_skripsi')->label('Judul Skripsi')->rows(3)->columnSpanFull(),
+                            ->helperText('Pilih ini jika dosen dari UINSI. Biarkan kosong jika mengisi Dosen Eksternal.'),
+                        TextInput::make('pembimbing2_external')
+                            ->label('Nama Dosen Pembimbing 2 (Eksternal)')
+                            ->helperText('Isi ini HANYA jika dosen dari luar UINSI.'),
+                        Textarea::make('judul_skripsi')
+                            ->label('Judul Skripsi')
+                            ->rows(3)
+                            ->columnSpanFull(),
                     ])->columns(2),
             ]);
     }

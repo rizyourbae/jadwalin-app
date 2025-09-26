@@ -18,6 +18,7 @@ class Mahasiswa extends Model
         'judul_skripsi',
         'pembimbing1_id',
         'pembimbing2_id',
+        'pembimbing2_external',
     ];
 
     public function user(): BelongsTo

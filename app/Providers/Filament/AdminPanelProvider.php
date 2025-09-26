@@ -32,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(asset('assets/img/jadwalin.png'))
             ->brandLogoHeight('4.3rem')
             ->brandName('Jadwalin')
+            ->font('Inter')
             ->maxContentWidth(MaxWidth::Full)
             ->favicon(asset('assets/img/apple.png'))
             ->id('admin')
