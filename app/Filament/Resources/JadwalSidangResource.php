@@ -4,16 +4,18 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\JadwalSidangResource\Pages;
 use App\Models\Dosen;
-use App\Filament\Resources\JadwalSidangResource\RelationManagers;
+use App\Exports\JadwalSidangExport;
+use App\Exports\JadwalSidangPdfExport;
 use App\Models\{JadwalSidang, PendaftaranSidang, Ruangan};
 use Filament\Forms\Components\{DatePicker, Section, Select, TimePicker};
 use Filament\Forms\{Get, Form};
 use Filament\Resources\Resource;
 use Filament\Tables\Table;
-use Filament\Tables\Actions\{ActionGroup, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
+use Filament\Tables\Actions\{Action, ActionGroup, EditAction, ViewAction, DeleteAction, BulkActionGroup, DeleteBulkAction};
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Facades\Excel;
 
 class JadwalSidangResource extends Resource
 {
@@ -144,6 +146,22 @@ class JadwalSidangResource extends Resource
                     ->color('info') // Mengubah warna tombol
                     ->button()
                     ->size('sm'), // Mengubah ukuran tombol
+            ])
+            ->headerActions([
+                // --- GANTI ExportAction DENGAN INI ---
+                Action::make('export')
+                    ->label('Export Jadwal Sidang')
+                    ->icon('heroicon-o-document-arrow-down')
+                    ->action(function () {
+                        return Excel::download(new JadwalSidangExport, 'jadwal-sidang-' . date('Y-m-d') . '.xlsx');
+                    }),
+                Action::make('export_pdf')
+                    ->label('Export PDF')
+                    ->icon('heroicon-o-document-arrow-down')
+                    ->color('danger')
+                    ->action(function () {
+                        return Excel::download(new JadwalSidangPdfExport, 'jadwal-sidang.pdf', \Maatwebsite\Excel\Excel::DOMPDF);
+                    }),
             ])
             ->bulkActions([
                 BulkActionGroup::make([
